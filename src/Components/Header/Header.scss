@@ -1,12 +1,38 @@
 .Header {
   .appBar {
-    background-color: #1687a7 !important;
+    background-color: #1687a7;
   }
-  .header-navbar-links {
-    text-decoration: none;
-    color: white !important;
-    margin-left: 20px;
-    font-weight: 100;
-    font-size: 0.9em;
+
+  .header-left {
+    display: flex;
+    justify-content: flex-start;
+    width: 20vw;
+    h6 {
+      display: flex;
+      align-items: center;
+      margin-left: 5px;
+      font-size: 1.5em;
+      small {
+        font-size: 0.4em;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .header-right {
+    display: flex;
+    justify-content: flex-end;
+    width: 80vw;
+    border-radius: 7px;
+    .header-navbar-links {
+      text-decoration: none;
+      color: white;
+      margin-left: 20px;
+      font-weight: 100;
+      font-size: 0.9em;
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 }
