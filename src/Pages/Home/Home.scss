@@ -1,0 +1,37 @@
+.Home {
+  .section-card {
+    background-color: #f6f5f5 !important;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card-home {
+      background-color: #ffffff;
+      height: 80%;
+      border-radius: 7px;
+      .left-card-home {
+        height: 72vh;
+        border-radius: 7px 0px 0px 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .avatar-card {
+          width: 300px;
+          height: 300px;
+        }
+      }
+      .right-card-home {
+        // background-color: peachpuff;
+        height: 72vh;
+        border-radius: 0px 7px 7px 0px;
+        .qr-rigth-card-home {
+          width: 115px;
+        }
+        .icons {
+          margin-left: 10px;
+          font-size: 1.3em;
+        }
+      }
+    }
+  }
+}
