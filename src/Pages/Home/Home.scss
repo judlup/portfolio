@@ -1,6 +1,8 @@
+@import "../../Scss/colors";
+
 .Home {
   .section-card {
-    background-color: #f6f5f5 !important;
+    background-color: $judlup-light !important;
     height: 90vh;
     display: flex;
     justify-content: center;
@@ -16,16 +18,59 @@
         justify-content: center;
         align-items: center;
         .avatar-card {
-          width: 300px;
-          height: 300px;
+          width: 400px;
+          height: 400px;
         }
       }
       .right-card-home {
-        // background-color: peachpuff;
         height: 72vh;
         border-radius: 0px 7px 7px 0px;
-        .qr-rigth-card-home {
-          width: 115px;
+        .qr-image-container-home-card {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          .qr-rigth-card-home {
+            width: 115px;
+            margin-right: 3%;
+            margin-top: 5%;
+          }
+        }
+        .name-home-card {
+          margin-top: 2%;
+          font-size: 4.9em;
+          font-weight: 450;
+        }
+        .job-title-home-card {
+          font-weight: 400;
+          letter-spacing: 10px;
+          text-align: center;
+          width: 83%;
+          background-color: $judlup-light;
+          color: $judlup-prim;
+          border-radius: 7px;
+          margin-bottom: 2em;
+        }
+        .contact-home-card {
+          letter-spacing: 10px;
+          svg {
+            color: $judlup-sec;
+            vertical-align: middle;
+          }
+          h6 {
+            font-size: 1.2em;
+          }
+        }
+        .container-social-home-card {
+          margin-top: 2%;
+          font-size: 1.2em;
+          color: $judlup-sec;
+        }
+        .container-download-resume-home-card {
+          margin-top: 2%;
+          .download-resume-home-card {
+            background-color: $judlup-sec;
+            width: 330px;
+          }
         }
         .icons {
           margin-left: 10px;
