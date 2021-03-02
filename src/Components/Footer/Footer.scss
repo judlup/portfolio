@@ -1,72 +1,95 @@
+@import "../../Scss/colors";
+
 .Footer {
-  background-color: #333333;
   height: 231px;
   color: #f6f5f5;
   display: flex;
-  .avatar-footer-cont {
+  .footer-info-container {
+    padding-top: 2%;
+    background-color: $judlup-prim;
     display: flex;
     align-items: center;
-    height: 100%;
-    padding-left: 5vh;
-    .avatar-footer {
-      width: 156px;
-      height: 156px;
+    justify-content: center;
+    .avatar-footer-cont {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      padding-left: 5vh;
+      .avatar-footer {
+        width: 156px;
+        height: 156px;
+      }
     }
-  }
-  .footer-info {
-    padding-top: 30px;
-    display: block;
-    height: 100%;
-    padding-left: 40px;
-    line-height: 0.8em;
-    small {
-      font-size: 11px;
-    }
-  }
-  .footer-contact {
-    padding-top: 30px;
-    height: 100%;
-    padding-left: 40px;
-    line-height: 0.8em;
-    small {
-      font-size: 11px;
-      a {
-        text-decoration: none;
-        color: #f6f5f5;
+    .footer-info {
+      padding-top: 30px;
+      display: block;
+      height: 100%;
+      padding-left: 40px;
+      line-height: 0.8em;
+      small {
+        font-size: 11px;
       }
     }
   }
-
-  .footer-cta {
-    height: 100%;
-    padding-left: 40px;
-    line-height: 0.8em;
-    margin-top: 30px;
-    Button {
-      margin-top: 15px;
-      border-color: #f6f5f5;
-      color: #f6f5f5;
+  .footer-contact-container {
+    padding-top: 2%;
+    background-color: $judlup-prim;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .footer-contact {
+      padding-top: 30px;
+      height: 100%;
+      padding-left: 40px;
+      line-height: 0.8em;
+      small {
+        font-size: 11px;
+        a {
+          text-decoration: none;
+          color: $judlup-light;
+        }
+      }
     }
   }
-
-  .footer-social {
+  .footer-cta-container {
+    padding-top: 2%;
+    background-color: $judlup-sec;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin-top: 30px;
-    .icons {
-      margin-left: 10px;
-      font-size: 1.3em;
-      &:hover {
-        font-size: 1.7em;
+    align-items: center;
+    justify-content: center;
+    .footer-cta {
+      height: 100%;
+      padding-left: 40px;
+      line-height: 0.8em;
+      margin-top: 30px;
+      Button {
+        margin-top: 15px;
+        border-color: $judlup-light;
+        color: $judlup-light;
+      }
+    }
+
+    .footer-social {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-top: 30px;
+      .icons {
+        margin-left: 10px;
+        font-size: 1.3em;
+        &:hover {
+          font-size: 1.7em;
+        }
       }
     }
   }
 }
 .footer-copyright {
-  background-color: #333;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $judlup-dark;
   padding-bottom: 10px;
-  color: #f6f5f5;
+  color: $judlup-third;
   font-size: 0.7em;
 }
