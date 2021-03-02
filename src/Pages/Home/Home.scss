@@ -81,4 +81,53 @@
       }
     }
   }
+  .about-me {
+    min-height: 100vh;
+    .left-side-about-me {
+      background-image: url("../../Assets/images/about-bg.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 1;
+      transition: 0.5s ease;
+      .left-side-overlay {
+        background-color: #008cba;
+        opacity: 0.5;
+        height: 100%;
+      }
+    }
+    .right-side-about-me {
+      background-color: #4c99af;
+      padding: 6em;
+      justify-content: center;
+      .title-about-me {
+        text-align: center;
+        color: $judlup-light;
+        margin-bottom: 1em;
+        font-weight: 450;
+      }
+      .content-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .content-about-me {
+          font-size: 1.3em;
+          text-align: justify;
+          color: #ffffff;
+          margin-bottom: 2em;
+          width: 500px;
+        }
+      }
+      .button-projects-container {
+        width: 65%;
+        display: flex;
+        justify-content: flex-end;
+        .button-projects-about-me {
+          background-color: $judlup-sec;
+          width: 200px;
+        }
+      }
+    }
+  }
 }
