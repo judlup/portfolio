@@ -13,7 +13,157 @@ import {
   FaWhatsapp,
   FaAddressBook,
 } from "react-icons/fa";
+import SkillBar from "react-skillbars";
 
+const SKILLS = [
+  {
+    type: "Leadership",
+    level: 100,
+  },
+  {
+    type: "IoT",
+    level: 100,
+  },
+  {
+    type: "PHP",
+    level: 100,
+  },
+  {
+    type: "Git",
+    level: 100,
+  },
+  {
+    type: "B. Model",
+    level: 100,
+  },
+  {
+    type: "HTML 5",
+    level: 100,
+  },
+  {
+    type: "Bootstrap",
+    level: 100,
+  },
+  {
+    type: "Linux",
+    level: 100,
+  },
+  {
+    type: "Angular",
+    level: 90,
+  },
+  {
+    type: "Javascript",
+    level: 90,
+  },
+  {
+    type: "TypeScript",
+    level: 90,
+  },
+];
+
+const SKILLS2 = [
+  {
+    type: "Node.js",
+    level: 90,
+  },
+  {
+    type: "Ionic",
+    level: 90,
+  },
+  {
+    type: "MySql",
+    level: 90,
+  },
+  {
+    type: "CSS - Sass",
+    level: 90,
+  },
+  {
+    type: "Laravel",
+    level: 80,
+  },
+  {
+    type: "React",
+    level: 80,
+  },
+  {
+    type: "AWS",
+    level: 80,
+  },
+  {
+    type: "Cisco",
+    level: 80,
+  },
+  {
+    type: "VoIP",
+    level: 80,
+  },
+  {
+    type: "Scrum",
+    level: 80,
+  },
+  {
+    type: "Mongo DB",
+    level: 70,
+  },
+];
+
+const SKILLS3 = [
+  {
+    type: "Python",
+    level: 70,
+  },
+  {
+    type: ".Net Core",
+    level: 70,
+  },
+  {
+    type: "PayU",
+    level: 70,
+  },
+  {
+    type: "CI/CD",
+    level: 70,
+  },
+  {
+    type: "Docker",
+    level: 70,
+  },
+  {
+    type: "English",
+    level: 65,
+  },
+  {
+    type: "React N.",
+    level: 60,
+  },
+  {
+    type: "Android",
+    level: 60,
+  },
+  {
+    type: "Figma",
+    level: 60,
+  },
+  {
+    type: "Elastic S.",
+    level: 60,
+  },
+  {
+    type: "ML",
+    level: 30,
+  },
+];
+
+const colors = {
+  bar: "#d3e0ea",
+  text: "#f6f5f5",
+  title: {
+    text: "#f6f5f5",
+    background: "#333333",
+  },
+};
 function Home() {
   return (
     <div className="Home">
@@ -125,6 +275,30 @@ function Home() {
               </Button>
             </div>
           </div>
+        </Grid>
+      </Grid>
+      <Grid container className="skills">
+        <div className="bg-overlay"></div>
+        <Grid item xs={12} className="skills-container">
+          <Grid container>
+            <Grid item xs={10} className="title-container-skills">
+              <span className="title-skills">My Skills</span>
+            </Grid>
+            <Grid item xs={2} className="button-container-skills">
+              <Button className="button-skills">My Experience</Button>
+            </Grid>
+          </Grid>
+          <Grid container>
+            <Grid item xs={12} sm={3} className="skills-body">
+              <SkillBar skills={SKILLS} colors={colors} height={35} />
+            </Grid>
+            <Grid item xs={12} sm={3} className="skills-body">
+              <SkillBar skills={SKILLS2} colors={colors} height={35} />
+            </Grid>
+            <Grid item xs={12} sm={3} className="skills-body">
+              <SkillBar skills={SKILLS3} colors={colors} height={35} />
+            </Grid>
+          </Grid>
         </Grid>
       </Grid>
     </div>
