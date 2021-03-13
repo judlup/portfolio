@@ -165,7 +165,57 @@
       margin-left: 6em;
     }
   }
+
+  .phrase {
+    min-height: 80vh;
+    .phrase-container {
+      background-image: url("../../Assets/images/phrase-bg.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 1;
+      transition: 0.5s ease;
+      .phrase-overlay {
+        background-color: #008cba;
+        opacity: 0.5;
+        height: 100%;
+      }
+    }
+    .phrase-segment {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      z-index: 1;
+      height: 100vh;
+      width: 100vw;
+      .phrase-border {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: solid 1px $judlup-light;
+        padding: 40px;
+        border-radius: 7px;
+        margin-bottom: 5em;
+        .phrase-text {
+          color: $judlup-light;
+          font-size: 2em;
+        }
+      }
+      .phrase-button-container {
+        display: flex;
+        justify-content: center;
+        .phrase-button {
+          color: $judlup-sec;
+          background-color: $judlup-light;
+        }
+      }
+    }
+  }
 }
+
+// Wave
 
 .custom-shape-divider-bottom {
   bottom: 0;
@@ -174,7 +224,6 @@
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
-  background-color: #4c99af;
 }
 
 .custom-shape-divider-bottom svg {
@@ -182,8 +231,4 @@
   display: block;
   width: calc(188% + 1.3px);
   height: 229px;
-}
-
-.custom-shape-divider-bottom .shape-fill {
-  fill: $judlup-prim;
 }
