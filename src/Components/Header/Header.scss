@@ -1,3 +1,5 @@
+@import "../../Scss/general";
+
 .Header {
   .appBar {
     background-color: #1687a7;
@@ -33,6 +35,21 @@
       &:hover {
         text-decoration: none;
       }
+    }
+    @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+      display: none;
+    }
+  }
+
+  .header-right-mobile {
+    display: flex;
+    justify-content: flex-end;
+    width: 90vw;
+    margin-right: 2%;    
+    svg{
+      width: 1.1em;
+      height: 1.1em;
+      color: $judlup-light;        
     }
   }
 }

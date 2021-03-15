@@ -1,5 +1,7 @@
+import { useState } from "react";
 import "./Header.scss";
 import { AppBar, Toolbar, Avatar, Typography, Link } from "@material-ui/core";
+import { FaEllipsisV } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -34,6 +36,11 @@ const Header = () => {
               </Link>
             </Typography>
           </div>
+          {/* Mobile */}
+          <div className="header-right-mobile">
+            <FaEllipsisV />
+          </div>
+          {/* Mobile */}
         </Toolbar>
       </AppBar>
     </div>

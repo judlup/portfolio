@@ -1,4 +1,4 @@
-@import "../../Scss/colors";
+@import "../../Scss/general";
 
 .Home {
   .section-card {
@@ -6,31 +6,50 @@
     height: 90vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
     .card-home {
       background-color: #ffffff;
       height: 80%;
       border-radius: 7px;
       -webkit-box-shadow: 0px 1px 5px -2px #000000;
-      box-shadow: 0px 1px 5px -2px #000000;
+      box-shadow: 0px 1px 5px -2px #000000;      
+      @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+        height: 80%;
+      }
       .left-card-home {
         height: 72vh;
         border-radius: 7px 0px 0px 7px;
         display: flex;
         justify-content: center;
         align-items: center;
+        @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+          display: flex;          
+          align-items: flex-start;
+          height: auto;          
+          padding-top: 1em;
+        }
         .avatar-card {
           width: 400px;
-          height: 400px;
+          height: 400px;          
+          @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+            width: 300px;
+            height: 300px;
+          }
         }
       }
       .right-card-home {
         height: 72vh;
-        border-radius: 0px 7px 7px 0px;
+        border-radius: 0px 7px 7px 0px;      
+        @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {            
+          height: auto;
+        }
         .qr-image-container-home-card {
           width: 100%;
           display: flex;
           justify-content: flex-end;
+          @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+            display: none;
+          }
           .qr-rigth-card-home {
             width: 115px;
             margin-right: 3%;
@@ -41,6 +60,11 @@
           margin-top: 2%;
           font-size: 4.9em;
           font-weight: 450;
+          @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+            margin-top: 2%;
+            font-size: 1.7em;
+            text-align: center;            
+          }
         }
         .job-title-home-card {
           font-weight: 400;
@@ -51,6 +75,19 @@
           color: $judlup-prim;
           border-radius: 7px;
           margin-bottom: 2em;
+          @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {            
+            text-align: center;
+            width: 90%;
+            margin-left: 5%;
+            font-size: 0.7em;
+            letter-spacing: 4px;
+          }
+        }
+        .grade-title-home-card{
+          @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {            
+            text-align: center;            
+            font-size: 1.3em;            
+          }
         }
         .contact-home-card {
           letter-spacing: 10px;
@@ -61,14 +98,26 @@
           h6 {
             font-size: 1.2em;
           }
+          @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {            
+            text-align: center;            
+            font-size: 0.8em;
+          }
         }
         .container-social-home-card {
           margin-top: 2%;
           font-size: 1.2em;
           color: $judlup-sec;
+          @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {            
+            text-align: center;            
+            font-size: 1.2em;
+          }
         }
         .container-download-resume-home-card {
           margin-top: 2%;
+          @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {                        
+            display: flex;
+            justify-content: center;
+          }
           .download-resume-home-card {
             background-color: $judlup-sec;
             width: 330px;
