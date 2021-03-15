@@ -84,7 +84,7 @@
   .about-me {
     min-height: 100vh;
     .left-side-about-me {
-      background-image: url("../../Assets/images/about-bg.jpg");
+      background-image: url("../../Assets/images/home/about-bg.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -169,12 +169,11 @@
   .phrase {
     min-height: 80vh;
     .phrase-container {
-      background-image: url("../../Assets/images/phrase-bg.jpg");
+      background-image: url("../../Assets/images/home/phrase-bg.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       opacity: 1;
-      transition: 0.5s ease;
       .phrase-overlay {
         background-color: #008cba;
         opacity: 0.5;
@@ -188,8 +187,7 @@
       justify-content: center;
       position: absolute;
       z-index: 1;
-      height: 100vh;
-      width: 100vw;
+      margin: 15em;
       .phrase-border {
         display: flex;
         align-items: center;
@@ -209,6 +207,46 @@
         .phrase-button {
           color: $judlup-sec;
           background-color: $judlup-light;
+        }
+      }
+    }
+  }
+
+  .testimonial {
+    background-color: $judlup-prim;
+    .testimonial-header {
+      display: flex;
+      flex-direction: row;
+      padding: 30px;
+      .testimonial-title-container {
+        border: 1px solid $judlup-light;
+        border-radius: 7px;
+        width: 15vw;
+        height: 8vh;
+        .testimonial-title {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: $judlup-light;
+        }
+      }
+    }
+    .testimonial-container {
+      margin-left: 2em;
+      .card-testimonial {
+        .card-testimonial-img-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .card-testimonial-img {
+            width: 200px;
+            height: 200px;
+          }
+        }
+        .card-description {
+          margin-top: 10px;
+          text-align: justify;
+          height: 170px;
         }
       }
     }

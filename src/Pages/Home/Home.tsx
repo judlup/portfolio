@@ -1,6 +1,13 @@
 import "./Home.scss";
 import Wave from "./Wave";
-import { Grid, Typography, Avatar, Button } from "@material-ui/core";
+import {
+  Grid,
+  Avatar,
+  Button,
+  Card,
+  CardContent,
+  Typography,
+} from "@material-ui/core";
 import {
   FaCloudDownloadAlt,
   FaLinkedinIn,
@@ -14,6 +21,7 @@ import {
   FaAddressBook,
 } from "react-icons/fa";
 import SkillBar from "react-skillbars";
+import edgarAcosta from "../../Assets/images/home/edgar-acosta.jpg";
 
 const SKILLS = [
   {
@@ -164,6 +172,30 @@ const colors = {
     background: "#333333",
   },
 };
+
+const testimonials = [
+  {
+    id: 1,
+    img: "",
+    name: "Ximena Hoffman",
+    title: "HR & Administration Manager",
+    company: "NEC de Colombia",
+    description:
+      "Tuve la oportunidad de trabajar con Julian en NEC y siempre mostró ser un líder natural, con una excelente actitud de servicio en todo momento. Es el tipo de profesionales que ayudan a construir en equipo y encontrar diversas formas de conseguir los resultados necesarios.",
+    date: "20/Jan/2021",
+  },
+  {
+    id: 2,
+    img: edgarAcosta,
+    name: "Edgar E. Acosta T.",
+    title: "Delivery & Operations Head",
+    company: "NEC de Colombia",
+    description:
+      "I had the good opportunity to get to know Julian at his period working for NEC. His work was of very positive and opportune impact for the projects my team was developing.I totally recommend Julian as an excellent resource for different kind of projects. Julie is a very creative person with a positive and 'Can Do' attitude all the time.",
+    date: "26/Feb/2021",
+  },
+];
+
 function Home() {
   return (
     <div className="Home">
@@ -329,6 +361,55 @@ function Home() {
           </div>
           <div className="phrase-overlay"></div>
         </Grid>
+      </Grid>
+
+      <Wave colorTop="#4c99af" colorBottom="#1687a7" />
+
+      <Grid container className="testimonial">
+        <Grid item xs={12} className="testimonial-header">
+          <div className="testimonial-title-container">
+            <h1 className="testimonial-title">Testimonials</h1>
+          </div>
+        </Grid>
+
+        {testimonials.map((data) => {
+          return (
+            <Grid
+              key={data.id}
+              item
+              md={2}
+              xs={12}
+              className="testimonial-container"
+            >
+              <Card className="card-testimonial">
+                <CardContent>
+                  <div className="card-testimonial-img-container">
+                    <Avatar
+                      className="card-testimonial-img"
+                      alt="Remy Sharp"
+                      src={data.img}
+                    />
+                  </div>
+                  <br />
+                  <Typography variant="h6">{data.name}</Typography>
+                  <Typography variant="h6" color="textSecondary">
+                    {data.title}
+                  </Typography>
+                  <Typography color="textSecondary">{data.company}</Typography>
+                  <Typography
+                    variant="body2"
+                    component="p"
+                    className="card-description"
+                  >
+                    {data.description}
+                  </Typography>
+                  <br />
+                  <small>{data.date}</small>
+                </CardContent>
+              </Card>
+            </Grid>
+          );
+        })}
       </Grid>
     </div>
   );
