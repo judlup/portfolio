@@ -52,4 +52,21 @@
       color: $judlup-light;        
     }
   }
+
+  .mobile-menu{
+    display: none;
+    @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+      display: block;
+    }
+
+    .mobile-navbar-links{
+      display: block;      
+      padding: 10px;
+      text-align: center;
+      color: $judlup-light;
+      &:hover{
+        background-color: $judlup-sec;
+      }
+    }
+  }
 }
