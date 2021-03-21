@@ -15,7 +15,7 @@ function Footer() {
     <>
       <div className="Footer">
         <Grid container>
-          <Grid item xs={4} className="footer-info-container">
+          <Grid item xs={12} md={4} className="footer-info-container">
             <div className="avatar-footer-cont">
               <Avatar
                 className="avatar-footer"
@@ -38,7 +38,7 @@ function Footer() {
               </div>
             </div>
           </Grid>
-          <Grid item xs={4} className="footer-contact-container">
+          <Grid item xs={12} md={4} className="footer-contact-container">
             <div className="footer-contact">
               <h3>Contact</h3>
               <div>
@@ -53,7 +53,7 @@ function Footer() {
               </div>
             </div>
           </Grid>
-          <Grid item xs={4} className="footer-cta-container">
+          <Grid item xs={12} md={4} className="footer-cta-container">
             <div className="footer-cta">
               <div>
                 <Button variant="outlined" color="default">
@@ -76,7 +76,9 @@ function Footer() {
           </Grid>
         </Grid>
       </div>
-      <div className="footer-copyright">Copyright Judlup 2021</div>
+      <Grid item xs={12} md={12}>
+        <div className="footer-copyright">Copyright Judlup 2021</div>
+      </Grid>
     </>
   );
 }

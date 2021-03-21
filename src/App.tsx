@@ -16,7 +16,7 @@ function App() {
           {/* <Route path="/login" component={Login} /> */}
           <Route exac path="/" component={Home} />
         </Switch>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </Router>
   );

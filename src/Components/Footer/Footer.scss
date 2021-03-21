@@ -10,11 +10,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+      padding-top: 0;
+    }    
     .avatar-footer-cont {
       display: flex;
       align-items: center;
       height: 100%;
       padding-left: 5vh;
+      @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+        display: none;
+      }    
       .avatar-footer {
         width: 156px;
         height: 156px;
@@ -26,6 +32,10 @@
       height: 100%;
       padding-left: 40px;
       line-height: 0.8em;
+      @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+        padding-top: 0;
+        padding-left: 0;        
+      }    
       small {
         font-size: 11px;
       }
@@ -37,11 +47,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {      
+      display: block;
+      padding: 0;
+      margin:0;
+    }
     .footer-contact {
       padding-top: 30px;
       height: 100%;
       padding-left: 40px;
       line-height: 0.8em;
+      @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+        padding-top: 0;
+        padding-left: 0;
+        margin-left: 25vw;
+        margin-bottom: 3vh;
+        align-items: center;
+      }
       small {
         font-size: 11px;
         a {
@@ -57,11 +79,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {            
+      padding: 0;      
+    }
     .footer-cta {
       height: 100%;
       padding-left: 40px;
       line-height: 0.8em;
       margin-top: 30px;
+      @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {            
+        padding-left: 0;
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
       Button {
         margin-top: 15px;
         border-color: $judlup-light;
@@ -74,6 +107,9 @@
       align-items: flex-start;
       justify-content: flex-start;
       margin-top: 30px;
+      @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {            
+        margin-bottom: 10px;
+      }
       .icons {
         margin-left: 10px;
         font-size: 1.3em;
@@ -89,7 +125,11 @@
   align-items: center;
   justify-content: center;
   background-color: $judlup-dark;
-  padding-bottom: 10px;
+  padding: 10px;
   color: $judlup-third;
   font-size: 0.7em;
+  @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {            
+    margin-top: 15vh;
+    height: 30px;
+  }
 }
