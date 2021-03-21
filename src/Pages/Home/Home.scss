@@ -132,6 +132,9 @@
   }
   .about-me {
     min-height: 100vh;
+    @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+      min-height: 40vh;
+    }
     .left-side-about-me {
       background-image: url("../../Assets/images/home/about-bg.jpg");
       background-position: center;
@@ -139,6 +142,9 @@
       background-size: cover;
       opacity: 1;
       transition: 0.5s ease;
+      @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+        display: none;
+      }
       .left-side-overlay {
         background-color: #008cba;
         opacity: 0.5;
@@ -149,11 +155,17 @@
       background-color: #4c99af;
       padding: 6em;
       justify-content: center;
+      @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+        padding: 2em;        
+      }
       .title-about-me {
         text-align: center;
         color: $judlup-light;
         margin-bottom: 1em;
         font-weight: 450;
+        @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+          font-size: 2em;
+        }
       }
       .content-container {
         display: flex;
@@ -166,6 +178,10 @@
           color: #ffffff;
           margin-bottom: 2em;
           width: 500px;
+          @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+            font-size: 1em;
+            width: 100%;
+          }
         }
       }
       .button-projects-container {
@@ -182,19 +198,34 @@
   .skills {
     background-color: $judlup-prim;
     padding: 10em;
+    @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+      padding: 0;
+    }
     .skills-container {
       background-color: $judlup-light;
       border-radius: 7px;
+      @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {        
+        background: none;
+      }
       .title-container-skills {
         margin-top: 1em;
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+          margin-top: 0;      
+          justify-content: center;          
+        }
         .title-skills {
           margin-left: 2em;
           font-size: 3em;
           color: $judlup-prim;
           font-weight: bold;
+          @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+            color: $judlup-light;
+            margin-left: 0;
+            font-size: 2em;
+          }
         }
       }
       .button-container-skills {
@@ -202,10 +233,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+          margin-top: 0;
+          min-width: 100vw;          
+        }
         .button-skills {
           background-color: $judlup-sec;
           color: $judlup-light;
           width: 160px;
+          @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+            width: 200px;
+          }
         }
       }
     }
@@ -237,6 +275,10 @@
       position: absolute;
       z-index: 1;
       margin: 15em;
+      @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+        margin: 0;
+        margin-top: 16em;
+      }
       .phrase-border {
         display: flex;
         align-items: center;
@@ -245,9 +287,18 @@
         padding: 40px;
         border-radius: 7px;
         margin-bottom: 5em;
+        @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+          margin-bottom: 1em;
+          margin-left: 1em;
+          margin-right: 1em;
+        }
         .phrase-text {
           color: $judlup-light;
           font-size: 2em;
+          @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+            font-size: 1.3em;
+            text-align: justify;            
+          }
         }
       }
       .phrase-button-container {
@@ -267,11 +318,19 @@
       display: flex;
       flex-direction: row;
       padding: 30px;
+      @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+        padding: 0;
+        margin-top: 1em;
+        margin-bottom: 1em;;
+      }
       .testimonial-title-container {
         border: 1px solid $judlup-light;
         border-radius: 7px;
-        width: 15vw;
-        height: 8vh;
+        width: 15vw;        
+        @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+          width: 100vw;
+          margin: 1em;
+        }
         .testimonial-title {
           display: flex;
           align-items: center;
@@ -282,7 +341,12 @@
     }
     .testimonial-container {
       margin-left: 2em;
+      @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+        margin-left: 0;
+        padding: 30px;
+      }
       .card-testimonial {
+        margin-bottom: 10px;
         .card-testimonial-img-container {
           display: flex;
           justify-content: center;
@@ -295,7 +359,33 @@
         .card-description {
           margin-top: 10px;
           text-align: justify;
-          height: 170px;
+          height: 180px;
+        }
+        .card-testimonial-name {
+          font-weight: bold;
+          text-align: center;
+        }
+        .card-testimonial-title{
+          font-size: 0.8em;
+          text-align: center;
+        }
+        .card-testimonial-company{
+          font-size: 0.7em;
+          color: rgb(153, 150, 150);
+          text-align: center;
+        }
+        .card-testimonial-date{
+          color: rgb(191, 191, 191);          
+        }
+
+      }
+      .testimonial-button-container {
+        display: flex;
+        justify-content: center;
+        .testimonial-button {
+          color: $judlup-sec;
+          background-color: $judlup-light;
+          width: 200px;
         }
       }
     }
