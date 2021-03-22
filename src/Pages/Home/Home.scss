@@ -204,9 +204,6 @@
     .skills-container {
       background-color: $judlup-light;
       border-radius: 7px;
-      @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {        
-        background: none;
-      }
       .title-container-skills {
         margin-top: 1em;
         display: flex;
@@ -222,9 +219,10 @@
           color: $judlup-prim;
           font-weight: bold;
           @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
-            color: $judlup-light;
+            color: $judlup-sec;            
             margin-left: 0;
             font-size: 2em;
+            margin: 1em 1em;            
           }
         }
       }
@@ -247,9 +245,39 @@
         }
       }
     }
-    .skills-body {
-      margin-top: 2em;
-      margin-left: 6em;
+    .skills-title{
+      text-align: center;
+    }
+    .skills-body {      
+      display: flex;
+      justify-content: center;  
+      @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {        
+        display: none;
+      }    
+      .skill-container{                
+        background-color: $judlup-sec;
+        color: $judlup-light;
+        padding: 13px;
+        border-radius: 7px;        
+        margin:10px;
+      }
+    }
+    .skills-body-mob {      
+      display: flex;
+      justify-content: center;  
+      display: none;
+      @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {        
+        flex-direction: column;
+        text-align: center;
+        display: block;
+      }    
+      .skill-container{                
+        background-color: $judlup-sec;
+        color: $judlup-light;
+        padding: 13px;
+        border-radius: 7px;        
+        margin:10px;
+      }
     }
   }
 
@@ -375,7 +403,11 @@
           text-align: center;
         }
         .card-testimonial-date{
-          color: rgb(191, 191, 191);          
+          color: $judlup-sec;
+          background-color: $judlup-third;
+          width: 100%;
+          text-align: center;
+          font-size: 12px;
         }
 
       }
