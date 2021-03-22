@@ -1,13 +1,34 @@
 import "./Home.scss";
 import Wave from "./Wave";
 import {
+  FRONTEND,
+  FRONTEND_MOB_1,
+  FRONTEND_MOB_2,
+  BACKEND,
+  BACKEND_MOB_1,
+  BACKEND_MOB_2,
+  DATABASE,
+  DATABASE_MOB_1,
+  DATABASE_MOB_2,
+  ARCHITECTURE,
+  ARCHITECTURE_MOB_1,
+  ARCHITECTURE_MOB_2,
+  SOFTSKILLS,
+  SOFTSKILLS_MOB_1,
+  SOFTSKILLS_MOB_2,
+  OTHERS,
+  OTHERS_MOB_1,
+  OTHERS_MOB_2,
+  testimonials,
+  EXPERIENCE,
+} from "./data";
+import {
   Grid,
   Avatar,
   Button,
   Card,
   CardContent,
   Typography,
-  Link,
 } from "@material-ui/core";
 import {
   FaCloudDownloadAlt,
@@ -22,448 +43,6 @@ import {
   FaAddressBook,
   FaLinkedin,
 } from "react-icons/fa";
-import SkillBar from "react-skillbars";
-import edgarAcosta from "../../Assets/images/home/edgar-acosta.jpg";
-import ximenaHoffman from "../../Assets/images/home/ximena-hoffman.jpg";
-import jonHall from "../../Assets/images/home/jon-hall.jpg";
-import juanHenao from "../../Assets/images/home/juan-henao.jpg";
-import martinRodriguez from "../../Assets/images/home/martin-rodriguez.jpg";
-import carlosNieto from "../../Assets/images/home/carlos-nieto.jpg";
-
-const FRONTEND = [
-  {
-    name: "Angular",
-  },
-  {
-    name: "React",
-  },
-  {
-    name: "PHP",
-  },
-  {
-    name: "Bootstrap",
-  },
-  {
-    name: "Ionic",
-  },
-  {
-    name: "React Native",
-  },
-  {
-    name: "Javascript",
-  },
-  {
-    name: "Typescript",
-  },
-  {
-    name: "HTML 5",
-  },
-  {
-    name: "CSS - Sass",
-  },
-  {
-    name: "Figma",
-  },
-  {
-    name: "Android",
-  },
-];
-
-const FRONTEND_MOB_1 = [
-  {
-    name: "Angular",
-  },
-  {
-    name: "React",
-  },
-  {
-    name: "PHP",
-  },
-  {
-    name: "Bootstrap",
-  },
-  {
-    name: "Ionic",
-  },
-  {
-    name: "React Native",
-  },
-];
-
-const FRONTEND_MOB_2 = [
-  {
-    name: "Javascript",
-  },
-  {
-    name: "Typescript",
-  },
-  {
-    name: "HTML 5",
-  },
-  {
-    name: "CSS - Sass",
-  },
-  {
-    name: "Figma",
-  },
-  {
-    name: "Android",
-  },
-];
-
-const BACKEND = [
-  {
-    name: "Lumen - Laravel",
-  },
-  {
-    name: "Sails.js",
-  },
-  {
-    name: "Express",
-  },
-  {
-    name: "PHP",
-  },
-  {
-    name: ".Net core - C#",
-  },
-  {
-    name: "Javascript",
-  },
-  {
-    name: "Typescript",
-  },
-  {
-    name: "Python - microservices",
-  },
-  {
-    name: "Node.js",
-  },
-];
-
-const BACKEND_MOB_1 = [
-  {
-    name: "Lumen - Laravel",
-  },
-  {
-    name: "Sails.js",
-  },
-  {
-    name: "Express",
-  },
-  {
-    name: "PHP",
-  },
-  {
-    name: ".Net core - C#",
-  },
-];
-
-const BACKEND_MOB_2 = [
-  {
-    name: "Javascript",
-  },
-  {
-    name: "Typescript",
-  },
-  {
-    name: "Python - microservices",
-  },
-  {
-    name: "Node.js",
-  },
-];
-
-const DATABASE = [
-  {
-    name: "MySql",
-  },
-  {
-    name: "MongoDb",
-  },
-  {
-    name: "ORM",
-  },
-  {
-    name: "SQL Server",
-  },
-  {
-    name: "Elastic Search",
-  },
-  {
-    name: "PostgreSql",
-  },
-];
-
-const DATABASE_MOB_1 = [
-  {
-    name: "MySql",
-  },
-  {
-    name: "MongoDb",
-  },
-  {
-    name: "ORM",
-  },
-];
-
-const DATABASE_MOB_2 = [
-  {
-    name: "MySql",
-  },
-  {
-    name: "MongoDb",
-  },
-  {
-    name: "ORM",
-  },
-];
-
-const ARCHITECTURE = [
-  {
-    name: "AWS",
-  },
-  {
-    name: "Google Cloud",
-  },
-  {
-    name: "Azure",
-  },
-  {
-    name: "Git",
-  },
-  {
-    name: "Github",
-  },
-  {
-    name: "Gitlab",
-  },
-  {
-    name: "Azure DevOps",
-  },
-  {
-    name: "Linux",
-  },
-  {
-    name: "CI/CD",
-  },
-  {
-    name: "Docker",
-  },
-];
-
-const ARCHITECTURE_MOB_1 = [
-  {
-    name: "AWS",
-  },
-  {
-    name: "Google Cloud",
-  },
-  {
-    name: "Azure",
-  },
-  {
-    name: "Git",
-  },
-  {
-    name: "Github",
-  },
-];
-
-const ARCHITECTURE_MOB_2 = [
-  {
-    name: "Gitlab",
-  },
-  {
-    name: "Azure DevOps",
-  },
-  {
-    name: "Linux",
-  },
-  {
-    name: "CI/CD",
-  },
-  {
-    name: "Docker",
-  },
-];
-
-const SOFTSKILLS = [
-  {
-    name: "Leadership",
-  },
-  {
-    name: "Innovation",
-  },
-  {
-    name: "SCRUM",
-  },
-  {
-    name: "Communication",
-  },
-  {
-    name: "English",
-  },
-  {
-    name: "Business Model",
-  },
-  {
-    name: "Autodidact",
-  },
-  {
-    name: "Goal orientation",
-  },
-  {
-    name: "Product design",
-  },
-];
-
-const SOFTSKILLS_MOB_1 = [
-  {
-    name: "Leadership",
-  },
-  {
-    name: "Innovation",
-  },
-  {
-    name: "SCRUM",
-  },
-  {
-    name: "Communication",
-  },
-  {
-    name: "English",
-  },
-];
-
-const SOFTSKILLS_MOB_2 = [
-  {
-    name: "Business Model",
-  },
-  {
-    name: "Autodidact",
-  },
-  {
-    name: "Goal orientation",
-  },
-  {
-    name: "Product design",
-  },
-];
-
-const OTHERS = [
-  {
-    name: "IoT",
-  },
-  {
-    name: "PayU",
-  },
-  {
-    name: "Machine Learning",
-  },
-  {
-    name: "Arduino",
-  },
-  {
-    name: "Hardware development & integration",
-  },
-  {
-    name: "Cisco",
-  },
-  {
-    name: "VoIP",
-  },
-];
-
-const OTHERS_MOB_1 = [
-  {
-    name: "IoT",
-  },
-  {
-    name: "PayU",
-  },
-  {
-    name: "Machine Learning",
-  },
-  {
-    name: "Arduino",
-  },
-];
-
-const OTHERS_MOB_2 = [
-  {
-    name: "Hardware development & integration",
-  },
-  {
-    name: "Cisco",
-  },
-  {
-    name: "VoIP",
-  },
-];
-
-const testimonials = [
-  {
-    id: 1,
-    img: jonHall,
-    name: 'Jon "Maddong" Hall',
-    title: "Board Chair",
-    company: "Linux Professional Institute",
-    description:
-      "I have known Julian since he was in high school. He created a home automation project where he could control a whole model house from his android tablet, and it was extremely impressive. I gave him a Raspberry Pi to work into his model, which he did in a few weeks.",
-    date: "19/Jan/2021",
-  },
-  {
-    id: 2,
-    img: ximenaHoffman,
-    name: "Ximena Hoffman",
-    title: "HR & Administration Manager",
-    company: "NEC de Colombia",
-    description:
-      "I had the opportunity to work with Julian at NEC and he always showed himself to be a natural leader, with an excellent service attitude at all times. He is the type of professional who helps to build as a team and find different ways to achieve the necessary results.",
-    date: "20/Jan/2021",
-  },
-  {
-    id: 3,
-    img: edgarAcosta,
-    name: "Edgar E. Acosta T.",
-    title: "Delivery & Operations Head",
-    company: "NEC de Colombia",
-    description:
-      "I had the good opportunity to get to know Julian at his period working for NEC. His work was of very positive and opportune impact for the projects my team was developing.I totally recommend Julian as an excellent resource for different kind of projects. Julian is a very creative person with a positive and 'Can Do' attitude all the time.",
-    date: "26/Feb/2021",
-  },
-  {
-    id: 4,
-    img: juanHenao,
-    name: "Juan Diego Henao",
-    title: "Junior Developer",
-    company: "Everis",
-    description:
-      "Julian Dario was a very important person for my work development, showing excellent leadership and broad knowledge in his area. Without much help from others, he was able to deal with all the obstacles that stood in his way, with great organization and quality. He is a team person, who is always predisposed to help and who, hardly, has a bad answer for others.",
-    date: "18/Jan/2021",
-  },
-  {
-    id: 5,
-    img: martinRodriguez,
-    name: "Martín Rodríguez",
-    title: "Senior Fullstack Developer",
-    company: "-",
-    description:
-      "Julián has all the skills to lead development teams, a very responsible and attentive person, both with the work team and with the client.",
-    date: "17/Jan/2021",
-  },
-  // {
-  //   id: 6,
-  //   img: carlosNieto,
-  //   name: "Carlos Nieto",
-  //   title: "Software Developer",
-  //   company: "NEC de Colombia",
-  //   description:
-  //     "Julián Luna is an excellent development leader, with excellent knowledge bases, organized, charismatic, proactive and very self-teaching, it was a lot of learning to work with him.",
-  //   date: "18/Jan/2021",
-  // },
-];
 
 function Home() {
   return (
@@ -603,21 +182,21 @@ function Home() {
             </Grid>
             <Grid item xs={6} sm={12} className="skills-body">
               {FRONTEND.map((fe) => (
-                <div className="skill-container">
+                <div key={fe.name} className="skill-container">
                   <span>{fe.name}</span>
                 </div>
               ))}
             </Grid>
             <Grid item xs={6} sm={12} className="skills-body-mob">
               {FRONTEND_MOB_1.map((fe) => (
-                <div className="skill-container">
+                <div key={fe.name} className="skill-container">
                   <span>{fe.name}</span>
                 </div>
               ))}
             </Grid>
             <Grid item xs={6} sm={12} className="skills-body-mob">
               {FRONTEND_MOB_2.map((fe) => (
-                <div className="skill-container">
+                <div key={fe.name} className="skill-container">
                   <span>{fe.name}</span>
                 </div>
               ))}
@@ -628,21 +207,21 @@ function Home() {
             </Grid>
             <Grid item xs={12} sm={12} className="skills-body">
               {BACKEND.map((fe) => (
-                <div className="skill-container">
+                <div key={fe.name} className="skill-container">
                   <span>{fe.name}</span>
                 </div>
               ))}
             </Grid>
             <Grid item xs={6} sm={12} className="skills-body-mob">
               {BACKEND_MOB_1.map((fe) => (
-                <div className="skill-container">
+                <div key={fe.name} className="skill-container">
                   <span>{fe.name}</span>
                 </div>
               ))}
             </Grid>
             <Grid item xs={6} sm={12} className="skills-body-mob">
               {BACKEND_MOB_2.map((fe) => (
-                <div className="skill-container">
+                <div key={fe.name} className="skill-container">
                   <span>{fe.name}</span>
                 </div>
               ))}
@@ -653,21 +232,21 @@ function Home() {
             </Grid>
             <Grid item xs={12} sm={12} className="skills-body">
               {DATABASE.map((fe) => (
-                <div className="skill-container">
+                <div key={fe.name} className="skill-container">
                   <span>{fe.name}</span>
                 </div>
               ))}
             </Grid>
             <Grid item xs={6} sm={12} className="skills-body-mob">
               {DATABASE_MOB_1.map((fe) => (
-                <div className="skill-container">
+                <div key={fe.name} className="skill-container">
                   <span>{fe.name}</span>
                 </div>
               ))}
             </Grid>
             <Grid item xs={6} sm={12} className="skills-body-mob">
               {DATABASE_MOB_2.map((fe) => (
-                <div className="skill-container">
+                <div key={fe.name} className="skill-container">
                   <span>{fe.name}</span>
                 </div>
               ))}
@@ -678,21 +257,21 @@ function Home() {
             </Grid>
             <Grid item xs={12} sm={12} className="skills-body">
               {ARCHITECTURE.map((fe) => (
-                <div className="skill-container">
+                <div key={fe.name} className="skill-container">
                   <span>{fe.name}</span>
                 </div>
               ))}
             </Grid>
             <Grid item xs={6} sm={12} className="skills-body-mob">
               {ARCHITECTURE_MOB_1.map((fe) => (
-                <div className="skill-container">
+                <div key={fe.name} className="skill-container">
                   <span>{fe.name}</span>
                 </div>
               ))}
             </Grid>
             <Grid item xs={6} sm={12} className="skills-body-mob">
               {ARCHITECTURE_MOB_2.map((fe) => (
-                <div className="skill-container">
+                <div key={fe.name} className="skill-container">
                   <span>{fe.name}</span>
                 </div>
               ))}
@@ -703,21 +282,21 @@ function Home() {
             </Grid>
             <Grid item xs={12} sm={12} className="skills-body">
               {SOFTSKILLS.map((fe) => (
-                <div className="skill-container">
+                <div key={fe.name} className="skill-container">
                   <span>{fe.name}</span>
                 </div>
               ))}
             </Grid>
             <Grid item xs={6} sm={12} className="skills-body-mob">
               {SOFTSKILLS_MOB_1.map((fe) => (
-                <div className="skill-container">
+                <div key={fe.name} className="skill-container">
                   <span>{fe.name}</span>
                 </div>
               ))}
             </Grid>
             <Grid item xs={6} sm={12} className="skills-body-mob">
               {SOFTSKILLS_MOB_2.map((fe) => (
-                <div className="skill-container">
+                <div key={fe.name} className="skill-container">
                   <span>{fe.name}</span>
                 </div>
               ))}
@@ -728,21 +307,21 @@ function Home() {
             </Grid>
             <Grid item xs={12} sm={12} className="skills-body">
               {OTHERS.map((fe) => (
-                <div className="skill-container">
+                <div key={fe.name} className="skill-container">
                   <span>{fe.name}</span>
                 </div>
               ))}
             </Grid>
             <Grid item xs={6} sm={12} className="skills-body-mob">
               {OTHERS_MOB_1.map((fe) => (
-                <div className="skill-container">
+                <div key={fe.name} className="skill-container">
                   <span>{fe.name}</span>
                 </div>
               ))}
             </Grid>
             <Grid item xs={6} sm={12} className="skills-body-mob">
               {OTHERS_MOB_2.map((fe) => (
-                <div className="skill-container">
+                <div key={fe.name} className="skill-container">
                   <span>{fe.name}</span>
                 </div>
               ))}
@@ -853,6 +432,28 @@ function Home() {
           </div>
         </Grid>
       </Grid>
+
+      <Wave colorTop="#1687a7" colorBottom="#d3e0ea" />
+
+      <Grid container className="experience">
+        <Grid item xs={12} md={12} className="experience-container">
+          <h3 className="experience-title">With whom I have worked</h3>
+          {EXPERIENCE.map((exp) => (
+            <Grid key={exp.id} item xs={12} md={2} className="experience-body">
+              <h3 className="experience-name">{exp.name}</h3>
+              <div className="experience-logo-container">
+                <img className="experience-logo" alt={exp.name} src={exp.img} />
+              </div>
+              <span className="experience-title-card">{exp.title}</span>
+              <span className="experience-duration">
+                {exp.since} - {exp.to}
+              </span>
+            </Grid>
+          ))}
+        </Grid>
+      </Grid>
+
+      <Wave colorTop="#d3e0ea" colorBottom="#1687a7" />
     </div>
   );
 }

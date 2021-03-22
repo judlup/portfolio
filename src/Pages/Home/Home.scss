@@ -422,6 +422,45 @@
       }
     }
   }
+
+  .experience{
+    min-height: 90vh;
+    background-color: $judlup-third;
+    .experience-container{
+      margin: 70px;
+      background-color: $judlup-light;
+      border-radius: 7px;
+      .experience-body{
+        display: flex;
+        flex-direction: row;
+        background-color: $judlup-sec;
+        .experience-name{
+          text-align: center;
+        }
+        .experience-title-card{
+
+        }
+        .experience-logo-container{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .experience-logo{
+            width: 200px;
+            display: flex;
+            justify-content: center;
+          }
+        }
+        .experience-duration{
+
+        }
+      }
+    }
+    .experience-title{
+      text-align: center;
+      color: $judlup-prim;
+      font-size: 2em;
+    }
+  }
 }
 
 // Wave
