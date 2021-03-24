@@ -8,7 +8,7 @@ import {
   Link,
   Grid,
 } from "@material-ui/core";
-import { FaEllipsisV, FaAngleDown, FaAngleUp } from "react-icons/fa";
+import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 
 const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(false);

@@ -3,7 +3,7 @@ import ximenaHoffman from "../../Assets/images/home/ximena-hoffman.jpg";
 import jonHall from "../../Assets/images/home/jon-hall.jpg";
 import juanHenao from "../../Assets/images/home/juan-henao.jpg";
 import martinRodriguez from "../../Assets/images/home/martin-rodriguez.jpg";
-import carlosNieto from "../../Assets/images/home/carlos-nieto.jpg";
+// import carlosNieto from "../../Assets/images/home/carlos-nieto.jpg";
 import orbitLogo from "../../Assets/images/home/orbit-group.svg";
 import necLogo from "../../Assets/images/home/nec-logo.png";
 import motorellaLogo from "../../Assets/images/home/motorella-logo.png";
