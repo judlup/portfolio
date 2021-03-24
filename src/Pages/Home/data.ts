@@ -5,6 +5,9 @@ import juanHenao from "../../Assets/images/home/juan-henao.jpg";
 import martinRodriguez from "../../Assets/images/home/martin-rodriguez.jpg";
 import carlosNieto from "../../Assets/images/home/carlos-nieto.jpg";
 import orbitLogo from "../../Assets/images/home/orbit-group.svg";
+import necLogo from "../../Assets/images/home/nec-logo.png";
+import motorellaLogo from "../../Assets/images/home/motorella-logo.png";
+import domotecoLogo from "../../Assets/images/home/domoteco-logo.png";
 
 export const FRONTEND = [
   {
@@ -453,7 +456,7 @@ export const EXPERIENCE = [
   {
     id: 2,
     name: "NEC de Colombia",
-    img:"",
+    img:necLogo,
     title:"Development Leader",
     since:"Feb. 2019",
     to: "Dec. 2020"
@@ -461,7 +464,7 @@ export const EXPERIENCE = [
   {
     id: 3,
     name: "Motorella",
-    img:"",
+    img:motorellaLogo,
     title:"Software Architect / Fullstack Developer",
     since:"Jun. 2019",
     to: "Mar. 2021"
@@ -469,7 +472,7 @@ export const EXPERIENCE = [
   {
     id: 4,
     name: "Domoteco",
-    img:"",
+    img:domotecoLogo,
     title:"CEO",
     since:"Nov. 2010",
     to: "Present"

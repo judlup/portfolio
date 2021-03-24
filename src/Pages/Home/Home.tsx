@@ -42,6 +42,7 @@ import {
   FaWhatsapp,
   FaAddressBook,
   FaLinkedin,
+  FaBriefcase,
 } from "react-icons/fa";
 
 function Home() {
@@ -435,23 +436,42 @@ function Home() {
 
       <Wave colorTop="#1687a7" colorBottom="#d3e0ea" />
 
-      <Grid container className="experience">
-        <Grid item xs={12} md={12} className="experience-container">
-          <h3 className="experience-title">With whom I have worked</h3>
+      <div className="experience">
+        <Grid container className="experience-container">
+          <Grid item xs={12} md={12}>
+            <h3 className="experience-title">My Experience</h3>
+          </Grid>
           {EXPERIENCE.map((exp) => (
-            <Grid key={exp.id} item xs={12} md={2} className="experience-body">
+            <Grid item xs={12} md={3} className="experience-body">
               <h3 className="experience-name">{exp.name}</h3>
               <div className="experience-logo-container">
-                <img className="experience-logo" alt={exp.name} src={exp.img} />
+                <img
+                  className="experience-logo"
+                  alt={exp.name}
+                  src={exp.img}
+                ></img>
               </div>
-              <span className="experience-title-card">{exp.title}</span>
-              <span className="experience-duration">
+              <h5 className="experience-title-card">{exp.title}</h5>
+              <small className="experience-duration">
                 {exp.since} - {exp.to}
-              </span>
+              </small>
             </Grid>
           ))}
+          <Grid item md={12} xs={12}>
+            <div className="experience-button-container">
+              <Button
+                variant="contained"
+                color="primary"
+                className="experience-button"
+                startIcon={<FaBriefcase />}
+                href=""
+              >
+                See More
+              </Button>
+            </div>
+          </Grid>
         </Grid>
-      </Grid>
+      </div>
 
       <Wave colorTop="#d3e0ea" colorBottom="#1687a7" />
     </div>
