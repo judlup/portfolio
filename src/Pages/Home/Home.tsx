@@ -473,7 +473,7 @@ function Home() {
         </Grid>
       </div>
 
-      <Wave colorTop="#d3e0ea" colorBottom="#1687a7" />
+      <Wave colorTop="#d3e0ea" colorBottom="#333333" />
     </div>
   );
 }
