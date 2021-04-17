@@ -26,8 +26,10 @@
     z-index: 1;
     width: 300px;
     @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+      position: absolute;
       margin: 0;
-      margin-top: 16em;
+      left: 10%;
+      top: 20%;
     }
     .experience-border {
       border: solid 1px $judlup-light;
@@ -53,6 +55,9 @@
 .experience {
   height: 90vh;
   background-color: $judlup-third;
+  @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+    height: 100%;
+  }
   .experience-container {
     display: flex;
     position: relative;
@@ -79,18 +84,35 @@
     left: 87.2vw;
     margin-top: 10px;
     margin-bottom: 5px;
+    @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+      left: 0;
+      width: 95%;
+      margin-bottom: 0;
+      margin-top: 10px;
+      margin-left: 4.2%;
+    }
   }
 
   .see-more-btn {
     position: relative;
     left: 4vw;
     margin-top: 10px;
+    @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+      left: 0;
+      width: 95%;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      margin-left: 4.2%;
+    }
   }
   .roles {
     background-color: $judlup-prim;
     max-width: 28vw;
     padding: 10px;
     border-radius: 7px;
+    @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+      max-width: 100%;
+    }
     .roles-text {
       color: $judlup-third;
     }

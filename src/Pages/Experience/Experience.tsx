@@ -43,7 +43,7 @@ const Experience = () => {
                   <>
                     <Grid item xs={12} md={4}>
                       {/* card */}
-                      <Card className='experience-card'>
+                      <Card key={job.id} className='experience-card'>
                         <CardContent>
                           <Typography variant='h6' component='h2'>
                             <FaSuitcase className='experience-icon' />{' '}
@@ -96,6 +96,7 @@ const Experience = () => {
             color='primary'
             className='btn-sec see-more-btn'
             startIcon={<FaLinkedin />}
+            target='_blank'
             href='https://www.linkedin.com/in/judlup/'
           >
             See More

@@ -1,5 +1,6 @@
 export const JOBS = [
   {
+    id: 1,
     title: 'Fullstack Senior Developer',
     company: 'Orbit Group Partners',
     description:
@@ -9,6 +10,7 @@ export const JOBS = [
     date: 'Dec 2020 - Present',
   },
   {
+    id: 2,
     title: 'CEO',
     company: 'Domoteco',
     description:
@@ -18,6 +20,7 @@ export const JOBS = [
     date: 'Sep 2013 - Present',
   },
   {
+    id: 3,
     title: 'Software Architect / Developer (Freelance)',
     company: 'Motorella',
     description:
@@ -27,6 +30,7 @@ export const JOBS = [
     date: 'Jun 2019 - March 2021',
   },
   {
+    id: 4,
     title: 'Lead Software Developer',
     company: 'NEC de Colombia',
     description:
@@ -36,6 +40,7 @@ export const JOBS = [
     date: 'Feb 2019 - Jan 2021',
   },
   {
+    id: 5,
     title: 'Software Developer (Freelance)',
     company: 'Apps.co - Min TIC',
     description:
@@ -44,6 +49,7 @@ export const JOBS = [
     date: 'Oct 2020 - Nov 2020',
   },
   {
+    id: 6,
     title: 'General Manager',
     company: 'G&J Corporation',
     description:

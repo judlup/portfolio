@@ -13,3 +13,11 @@ https://tinypng.com/
 # Shape wave divider
 
 https://www.shapedivider.app/
+
+# Enable routing Netliffy
+
+Add \_redirects file in your public folder
+Write down inside file:
+/\* /index.html 200
+
+https://answers.netlify.com/t/netlify-page-not-found-when-sharing-react-router-dom-based-links/11744
