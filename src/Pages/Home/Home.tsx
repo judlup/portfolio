@@ -1,5 +1,5 @@
-import "./Home.scss";
-import Wave from "./Wave";
+import './Home.scss';
+import Wave from './Wave';
 import {
   FRONTEND,
   FRONTEND_MOB_1,
@@ -21,7 +21,7 @@ import {
   OTHERS_MOB_2,
   testimonials,
   EXPERIENCE,
-} from "./data";
+} from './data';
 import {
   Grid,
   Avatar,
@@ -29,7 +29,7 @@ import {
   Card,
   CardContent,
   Typography,
-} from "@material-ui/core";
+} from '@material-ui/core';
 import {
   FaCloudDownloadAlt,
   FaLinkedinIn,
@@ -43,46 +43,46 @@ import {
   FaAddressBook,
   FaLinkedin,
   FaBriefcase,
-} from "react-icons/fa";
+} from 'react-icons/fa';
 
 function Home() {
   return (
-    <div className="Home">
-      <Grid container className="section-card">
-        <Grid item xs={12} md={10} className="card-home">
+    <div className='Home'>
+      <Grid container className='section-card'>
+        <Grid item xs={12} md={10} className='card-home'>
           <Grid container>
-            <Grid item xs={12} md={4} className="left-card-home">
+            <Grid item xs={12} md={4} className='left-card-home'>
               <Avatar
-                className="avatar-card"
-                src="https://pbs.twimg.com/profile_images/1229977160783482880/2PC2_PUH_400x400.jpg"
+                className='avatar-card'
+                src='https://pbs.twimg.com/profile_images/1229977160783482880/2PC2_PUH_400x400.jpg'
               ></Avatar>
             </Grid>
-            <Grid item xs={12} md={8} className="right-card-home">
+            <Grid item xs={12} md={8} className='right-card-home'>
               <Grid container>
-                <Grid item xs={12} className="qr-image-container-home-card">
+                <Grid item xs={12} className='qr-image-container-home-card'>
                   <img
-                    alt="QR"
-                    className="qr-rigth-card-home"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/1200px-QR_code_for_mobile_English_Wikipedia.svg.png"
+                    alt='QR'
+                    className='qr-rigth-card-home'
+                    src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/1200px-QR_code_for_mobile_English_Wikipedia.svg.png'
                   ></img>
                 </Grid>
                 <Grid item xs={12} md={12}>
-                  <Typography variant="h2" className="name-home-card">
+                  <Typography variant='h2' className='name-home-card'>
                     Julián Darío Luna Patiño
                   </Typography>
                 </Grid>
                 <Grid item xs={12} md={12}>
-                  <Typography variant="h5" className="job-title-home-card">
+                  <Typography variant='h5' className='job-title-home-card'>
                     Software Architect & IoT Developer
                   </Typography>
                 </Grid>
                 <Grid item xs={12} md={6}>
-                  <Typography variant="h5" className="grade-title-home-card">
+                  <Typography variant='h5' className='grade-title-home-card'>
                     Telecommunications Engineer
                   </Typography>
                 </Grid>
-                <Grid item xs={12} md={6} className="contact-home-card">
-                  <Typography variant="subtitle1">
+                <Grid item xs={12} md={6} className='contact-home-card'>
+                  <Typography variant='subtitle1'>
                     <FaEnvelope /> im@judlup.dev | <FaWhatsapp /> +57 3175769114
                   </Typography>
                 </Grid>
@@ -90,26 +90,26 @@ function Home() {
                   item
                   xs={12}
                   md={6}
-                  className="container-social-home-card"
+                  className='container-social-home-card'
                 >
-                  <FaLinkedinIn className="icons" />
-                  <FaTwitter className="icons" />
-                  <FaYoutube className="icons" />
-                  <FaInstagram className="icons" />
-                  <FaGithub className="icons" />
-                  <FaStackOverflow className="icons" />
+                  <FaLinkedinIn className='icons' />
+                  <FaTwitter className='icons' />
+                  <FaYoutube className='icons' />
+                  <FaInstagram className='icons' />
+                  <FaGithub className='icons' />
+                  <FaStackOverflow className='icons' />
                 </Grid>
                 <Grid
                   item
                   xs={12}
                   md={6}
-                  className="container-download-resume-home-card"
+                  className='container-download-resume-home-card'
                 >
-                  <Typography variant="h5">
+                  <Typography variant='h5'>
                     <Button
-                      variant="contained"
-                      color="primary"
-                      className="download-resume-home-card"
+                      variant='contained'
+                      color='primary'
+                      className='download-resume-home-card'
                       startIcon={<FaCloudDownloadAlt />}
                     >
                       Resume
@@ -122,16 +122,16 @@ function Home() {
         </Grid>
       </Grid>
 
-      <Grid container className="about-me">
-        <Grid item xs={12} md={6} className="left-side-about-me">
-          <div className="left-side-overlay"></div>
+      <Grid container className='about-me'>
+        <Grid item xs={12} md={6} className='left-side-about-me'>
+          <div className='left-side-overlay'></div>
         </Grid>
-        <Grid item xs={12} md={6} className="right-side-about-me">
-          <Typography variant="h2" className="title-about-me">
+        <Grid item xs={12} md={6} className='right-side-about-me'>
+          <Typography variant='h2' className='title-about-me'>
             Hi, it's about me
           </Typography>
-          <div className="content-container">
-            <Typography variant="body2" className="content-about-me">
+          <div className='content-container'>
+            <Typography variant='body2' className='content-about-me'>
               I’m an organized person who meets the tasks and requirements that
               I am required, capable of leading and solving problems,
               responsible and compliant of homework, with great facility to
@@ -141,7 +141,7 @@ function Home() {
               leadership and challenges, lover of my little daughter Nikol
               Daniela.
             </Typography>
-            <Typography variant="body2" className="content-about-me">
+            <Typography variant='body2' className='content-about-me'>
               I'm a entrepreneur person, at 2013 I started Domoteco about
               development of home automation oriented to internet of things, at
               2013 I won a seed capital from SENA Fondo Emprender, at 2018 this
@@ -151,11 +151,11 @@ function Home() {
               teams, innovating and generating new solutions for improve and get
               new horizonts to improve day to day my work.
             </Typography>
-            <div className="button-projects-container">
+            <div className='button-projects-container'>
               <Button
-                variant="contained"
-                color="primary"
-                className="button-projects-about-me"
+                variant='contained'
+                color='primary'
+                className='button-projects-about-me'
                 startIcon={<FaAddressBook />}
               >
                 Projects
@@ -165,164 +165,164 @@ function Home() {
         </Grid>
       </Grid>
 
-      <Wave colorTop="#4c99af" colorBottom="#1687a7" />
+      <Wave colorTop='#4c99af' colorBottom='#1687a7' />
 
-      <Grid container className="skills">
-        <Grid item xs={12} md={12} className="skills-container">
+      <Grid container className='skills'>
+        <Grid item xs={12} md={12} className='skills-container'>
           <Grid container>
-            <Grid item xs={12} md={10} className="title-container-skills">
-              <span className="title-skills">My Skills</span>
+            <Grid item xs={12} md={10} className='title-container-skills'>
+              <span className='title-skills'>My Skills</span>
             </Grid>
-            <Grid item xs={12} md={2} className="button-container-skills">
-              <Button className="button-skills">My Experience</Button>
+            <Grid item xs={12} md={2} className='button-container-skills'>
+              <Button className='button-skills'>My Experience</Button>
             </Grid>
           </Grid>
           <Grid container>
-            <Grid item xs={12} sm={12} className="skills-title">
+            <Grid item xs={12} sm={12} className='skills-title'>
               <h3>Front-End</h3>
             </Grid>
-            <Grid item xs={6} sm={12} className="skills-body">
+            <Grid item xs={6} sm={12} className='skills-body'>
               {FRONTEND.map((fe) => (
-                <div key={fe.name} className="skill-container">
+                <div key={fe.name} className='skill-container'>
                   <span>{fe.name}</span>
                 </div>
               ))}
             </Grid>
-            <Grid item xs={6} sm={12} className="skills-body-mob">
+            <Grid item xs={6} sm={12} className='skills-body-mob'>
               {FRONTEND_MOB_1.map((fe) => (
-                <div key={fe.name} className="skill-container">
+                <div key={fe.name} className='skill-container'>
                   <span>{fe.name}</span>
                 </div>
               ))}
             </Grid>
-            <Grid item xs={6} sm={12} className="skills-body-mob">
+            <Grid item xs={6} sm={12} className='skills-body-mob'>
               {FRONTEND_MOB_2.map((fe) => (
-                <div key={fe.name} className="skill-container">
+                <div key={fe.name} className='skill-container'>
                   <span>{fe.name}</span>
                 </div>
               ))}
             </Grid>
 
-            <Grid item xs={12} sm={12} className="skills-title">
+            <Grid item xs={12} sm={12} className='skills-title'>
               <h3>Back-End</h3>
             </Grid>
-            <Grid item xs={12} sm={12} className="skills-body">
+            <Grid item xs={12} sm={12} className='skills-body'>
               {BACKEND.map((fe) => (
-                <div key={fe.name} className="skill-container">
+                <div key={fe.name} className='skill-container'>
                   <span>{fe.name}</span>
                 </div>
               ))}
             </Grid>
-            <Grid item xs={6} sm={12} className="skills-body-mob">
+            <Grid item xs={6} sm={12} className='skills-body-mob'>
               {BACKEND_MOB_1.map((fe) => (
-                <div key={fe.name} className="skill-container">
+                <div key={fe.name} className='skill-container'>
                   <span>{fe.name}</span>
                 </div>
               ))}
             </Grid>
-            <Grid item xs={6} sm={12} className="skills-body-mob">
+            <Grid item xs={6} sm={12} className='skills-body-mob'>
               {BACKEND_MOB_2.map((fe) => (
-                <div key={fe.name} className="skill-container">
+                <div key={fe.name} className='skill-container'>
                   <span>{fe.name}</span>
                 </div>
               ))}
             </Grid>
 
-            <Grid item xs={12} sm={12} className="skills-title">
+            <Grid item xs={12} sm={12} className='skills-title'>
               <h3>Data Base</h3>
             </Grid>
-            <Grid item xs={12} sm={12} className="skills-body">
+            <Grid item xs={12} sm={12} className='skills-body'>
               {DATABASE.map((fe) => (
-                <div key={fe.name} className="skill-container">
+                <div key={fe.name} className='skill-container'>
                   <span>{fe.name}</span>
                 </div>
               ))}
             </Grid>
-            <Grid item xs={6} sm={12} className="skills-body-mob">
+            <Grid item xs={6} sm={12} className='skills-body-mob'>
               {DATABASE_MOB_1.map((fe) => (
-                <div key={fe.name} className="skill-container">
+                <div key={fe.name} className='skill-container'>
                   <span>{fe.name}</span>
                 </div>
               ))}
             </Grid>
-            <Grid item xs={6} sm={12} className="skills-body-mob">
+            <Grid item xs={6} sm={12} className='skills-body-mob'>
               {DATABASE_MOB_2.map((fe) => (
-                <div key={fe.name} className="skill-container">
+                <div key={fe.name} className='skill-container'>
                   <span>{fe.name}</span>
                 </div>
               ))}
             </Grid>
 
-            <Grid item xs={12} sm={12} className="skills-title">
+            <Grid item xs={12} sm={12} className='skills-title'>
               <h3>Architecture</h3>
             </Grid>
-            <Grid item xs={12} sm={12} className="skills-body">
+            <Grid item xs={12} sm={12} className='skills-body'>
               {ARCHITECTURE.map((fe) => (
-                <div key={fe.name} className="skill-container">
+                <div key={fe.name} className='skill-container'>
                   <span>{fe.name}</span>
                 </div>
               ))}
             </Grid>
-            <Grid item xs={6} sm={12} className="skills-body-mob">
+            <Grid item xs={6} sm={12} className='skills-body-mob'>
               {ARCHITECTURE_MOB_1.map((fe) => (
-                <div key={fe.name} className="skill-container">
+                <div key={fe.name} className='skill-container'>
                   <span>{fe.name}</span>
                 </div>
               ))}
             </Grid>
-            <Grid item xs={6} sm={12} className="skills-body-mob">
+            <Grid item xs={6} sm={12} className='skills-body-mob'>
               {ARCHITECTURE_MOB_2.map((fe) => (
-                <div key={fe.name} className="skill-container">
+                <div key={fe.name} className='skill-container'>
                   <span>{fe.name}</span>
                 </div>
               ))}
             </Grid>
 
-            <Grid item xs={12} sm={12} className="skills-title">
+            <Grid item xs={12} sm={12} className='skills-title'>
               <h3>Soft Skills</h3>
             </Grid>
-            <Grid item xs={12} sm={12} className="skills-body">
+            <Grid item xs={12} sm={12} className='skills-body'>
               {SOFTSKILLS.map((fe) => (
-                <div key={fe.name} className="skill-container">
+                <div key={fe.name} className='skill-container'>
                   <span>{fe.name}</span>
                 </div>
               ))}
             </Grid>
-            <Grid item xs={6} sm={12} className="skills-body-mob">
+            <Grid item xs={6} sm={12} className='skills-body-mob'>
               {SOFTSKILLS_MOB_1.map((fe) => (
-                <div key={fe.name} className="skill-container">
+                <div key={fe.name} className='skill-container'>
                   <span>{fe.name}</span>
                 </div>
               ))}
             </Grid>
-            <Grid item xs={6} sm={12} className="skills-body-mob">
+            <Grid item xs={6} sm={12} className='skills-body-mob'>
               {SOFTSKILLS_MOB_2.map((fe) => (
-                <div key={fe.name} className="skill-container">
+                <div key={fe.name} className='skill-container'>
                   <span>{fe.name}</span>
                 </div>
               ))}
             </Grid>
 
-            <Grid item xs={12} sm={12} className="skills-title">
+            <Grid item xs={12} sm={12} className='skills-title'>
               <h3>Others</h3>
             </Grid>
-            <Grid item xs={12} sm={12} className="skills-body">
+            <Grid item xs={12} sm={12} className='skills-body'>
               {OTHERS.map((fe) => (
-                <div key={fe.name} className="skill-container">
+                <div key={fe.name} className='skill-container'>
                   <span>{fe.name}</span>
                 </div>
               ))}
             </Grid>
-            <Grid item xs={6} sm={12} className="skills-body-mob">
+            <Grid item xs={6} sm={12} className='skills-body-mob'>
               {OTHERS_MOB_1.map((fe) => (
-                <div key={fe.name} className="skill-container">
+                <div key={fe.name} className='skill-container'>
                   <span>{fe.name}</span>
                 </div>
               ))}
             </Grid>
-            <Grid item xs={6} sm={12} className="skills-body-mob">
+            <Grid item xs={6} sm={12} className='skills-body-mob'>
               {OTHERS_MOB_2.map((fe) => (
-                <div key={fe.name} className="skill-container">
+                <div key={fe.name} className='skill-container'>
                   <span>{fe.name}</span>
                 </div>
               ))}
@@ -340,38 +340,38 @@ function Home() {
         </Grid>
       </Grid>
 
-      <Wave colorTop="#1687a7" colorBottom="#4c99af" />
+      <Wave colorTop='#1687a7' colorBottom='#4c99af' />
 
-      <Grid container className="phrase">
-        <Grid item xs={12} md={12} className="phrase-container">
-          <div className="phrase-segment">
-            <div className="phrase-border">
-              <span className="phrase-text">
+      <Grid container className='phrase'>
+        <Grid item xs={12} md={12} className='phrase-container'>
+          <div className='phrase-segment'>
+            <div className='phrase-border'>
+              <span className='phrase-text'>
                 In each project I give my knowledge and experience so that the
                 results are as expected.
               </span>
             </div>
-            <div className="phrase-button-container">
+            <div className='phrase-button-container'>
               <Button
-                variant="contained"
-                color="primary"
-                className="phrase-button"
+                variant='contained'
+                color='primary'
+                className='phrase-button'
                 startIcon={<FaAddressBook />}
               >
                 Projects in which I have participated
               </Button>
             </div>
           </div>
-          <div className="phrase-overlay"></div>
+          <div className='phrase-overlay'></div>
         </Grid>
       </Grid>
 
-      <Wave colorTop="#4c99af" colorBottom="#1687a7" />
+      <Wave colorTop='#4c99af' colorBottom='#1687a7' />
 
-      <Grid container className="testimonial">
-        <Grid item xs={12} md={12} className="testimonial-header">
-          <div className="testimonial-title-container">
-            <h1 className="testimonial-title">Testimonials</h1>
+      <Grid container className='testimonial'>
+        <Grid item xs={12} md={12} className='testimonial-header'>
+          <div className='testimonial-title-container'>
+            <h1 className='testimonial-title'>Testimonials</h1>
           </div>
         </Grid>
 
@@ -382,36 +382,36 @@ function Home() {
               item
               md={2}
               xs={12}
-              className="testimonial-container"
+              className='testimonial-container'
             >
-              <Card className="card-testimonial">
+              <Card className='card-testimonial'>
                 <CardContent>
-                  <div className="card-testimonial-img-container">
+                  <div className='card-testimonial-img-container'>
                     <Avatar
-                      className="card-testimonial-img"
-                      alt="Remy Sharp"
+                      className='card-testimonial-img'
+                      alt='Remy Sharp'
                       src={data.img}
                     />
                   </div>
                   <br />
-                  <Typography className="card-testimonial-name">
+                  <Typography className='card-testimonial-name'>
                     {data.name}
                   </Typography>
-                  <Typography className="card-testimonial-title">
+                  <Typography className='card-testimonial-title'>
                     {data.title}
                   </Typography>
-                  <Typography className="card-testimonial-company">
+                  <Typography className='card-testimonial-company'>
                     {data.company}
                   </Typography>
                   <Typography
-                    variant="body2"
-                    component="p"
-                    className="card-description"
+                    variant='body2'
+                    component='p'
+                    className='card-description'
                   >
                     {data.description}
                   </Typography>
                   <br />
-                  <div className="card-testimonial-date">
+                  <div className='card-testimonial-date'>
                     <small>{data.date}</small>
                   </div>
                 </CardContent>
@@ -419,14 +419,14 @@ function Home() {
             </Grid>
           );
         })}
-        <Grid item md={12} xs={12} className="testimonial-container">
-          <div className="testimonial-button-container">
+        <Grid item md={12} xs={12} className='testimonial-container'>
+          <div className='testimonial-button-container'>
             <Button
-              variant="contained"
-              color="primary"
-              className="testimonial-button"
+              variant='contained'
+              color='primary'
+              className='testimonial-button'
               startIcon={<FaLinkedin />}
-              href="https://www.linkedin.com/in/judlup/"
+              href='https://www.linkedin.com/in/judlup/'
             >
               See More
             </Button>
@@ -434,37 +434,37 @@ function Home() {
         </Grid>
       </Grid>
 
-      <Wave colorTop="#1687a7" colorBottom="#d3e0ea" />
+      <Wave colorTop='#1687a7' colorBottom='#d3e0ea' />
 
-      <div className="experience">
-        <Grid container className="experience-container">
+      <div className='experience'>
+        <Grid container className='experience-container'>
           <Grid item xs={12} md={12}>
-            <h3 className="experience-title">My Experience</h3>
+            <h3 className='experience-title'>My Experience</h3>
           </Grid>
           {EXPERIENCE.map((exp) => (
-            <Grid item xs={12} md={3} className="experience-body">
-              <h3 className="experience-name">{exp.name}</h3>
-              <div className="experience-logo-container">
+            <Grid key={exp.id} item xs={12} md={3} className='experience-body'>
+              <h3 className='experience-name'>{exp.name}</h3>
+              <div className='experience-logo-container'>
                 <img
-                  className="experience-logo"
+                  className='experience-logo'
                   alt={exp.name}
                   src={exp.img}
                 ></img>
               </div>
-              <h5 className="experience-title-card">{exp.title}</h5>
-              <small className="experience-duration">
+              <h5 className='experience-title-card'>{exp.title}</h5>
+              <small className='experience-duration'>
                 {exp.since} - {exp.to}
               </small>
             </Grid>
           ))}
           <Grid item md={12} xs={12}>
-            <div className="experience-button-container">
+            <div className='experience-button-container'>
               <Button
-                variant="contained"
-                color="primary"
-                className="experience-button"
+                variant='contained'
+                color='primary'
+                className='experience-button'
                 startIcon={<FaBriefcase />}
-                href=""
+                href=''
               >
                 See More
               </Button>
@@ -473,7 +473,7 @@ function Home() {
         </Grid>
       </div>
 
-      <Wave colorTop="#d3e0ea" colorBottom="#333333" />
+      <Wave colorTop='#d3e0ea' colorBottom='#333333' />
     </div>
   );
 }

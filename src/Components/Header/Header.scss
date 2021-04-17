@@ -1,8 +1,8 @@
-@import "../../Scss/general";
+@import '../../Scss/general';
 
 .Header {
   .appBar {
-    background-color: #1687a7;
+    background-color: $judlup-prim;
   }
 
   .header-left {
@@ -32,6 +32,7 @@
       margin-left: 20px;
       font-weight: 100;
       font-size: 0.9em;
+      padding: 10px;
       &:hover {
         text-decoration: none;
       }
@@ -41,30 +42,34 @@
     }
   }
 
+  .navbar-links-active {
+    border-bottom: 2px solid $judlup-sec;
+  }
+
   .header-right-mobile {
     display: flex;
     justify-content: flex-end;
     width: 90vw;
-    margin-right: 2%;    
-    svg{
+    margin-right: 2%;
+    svg {
       width: 1.1em;
       height: 1.1em;
-      color: $judlup-light;        
+      color: $judlup-light;
     }
   }
 
-  .mobile-menu{
+  .mobile-menu {
     display: none;
     @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
       display: block;
     }
 
-    .mobile-navbar-links{
-      display: block;      
+    .mobile-navbar-links {
+      display: block;
       padding: 10px;
       text-align: center;
       color: $judlup-light;
-      &:hover{
+      &:hover {
         background-color: $judlup-sec;
       }
     }
