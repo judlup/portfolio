@@ -40,44 +40,41 @@ const Experience = () => {
             <Grid container style={{ marginTop: '1%' }}>
               {JOBS &&
                 JOBS.map((job) => (
-                  <>
-                    <Grid item xs={12} md={4}>
-                      {/* card */}
-                      <Card key={job.id} className='experience-card'>
-                        <CardContent>
-                          <Typography variant='h6' component='h2'>
-                            <FaSuitcase className='experience-icon' />{' '}
-                            {job.title}
-                          </Typography>
-                          <Typography
-                            color='textSecondary'
-                            variant='overline'
-                            gutterBottom
-                          >
-                            {job.company}
-                          </Typography>
-                          <hr className='divider' />
-                          <Typography variant='body2' component='p'>
-                            {job.description}
-                          </Typography>
-                          <br />
-                          <Typography variant='body2' component='p'>
-                            <strong>Tech Stack:</strong> {job.stack}
-                          </Typography>
-                        </CardContent>
-                        <CardActions>
-                          <Typography
-                            color='textSecondary'
-                            variant='caption'
-                            gutterBottom
-                          >
-                            {job.date}
-                          </Typography>
-                        </CardActions>
-                      </Card>
-                      {/* card */}
-                    </Grid>
-                  </>
+                  <Grid key={job.id} item xs={12} md={4}>
+                    {/* card */}
+                    <Card className='experience-card'>
+                      <CardContent>
+                        <Typography variant='h6' component='h2'>
+                          <FaSuitcase className='experience-icon' /> {job.title}
+                        </Typography>
+                        <Typography
+                          color='textSecondary'
+                          variant='overline'
+                          gutterBottom
+                        >
+                          {job.company}
+                        </Typography>
+                        <hr className='divider' />
+                        <Typography variant='body2' component='p'>
+                          {job.description}
+                        </Typography>
+                        <br />
+                        <Typography variant='body2' component='p'>
+                          <strong>Tech Stack:</strong> {job.stack}
+                        </Typography>
+                      </CardContent>
+                      <CardActions>
+                        <Typography
+                          color='textSecondary'
+                          variant='caption'
+                          gutterBottom
+                        >
+                          {job.date}
+                        </Typography>
+                      </CardActions>
+                    </Card>
+                    {/* card */}
+                  </Grid>
                 ))}
               <Grid item xs={12} md={12} className='roles'>
                 <Typography

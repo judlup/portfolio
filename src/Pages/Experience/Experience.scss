@@ -68,6 +68,9 @@
   }
   .experience-container {
     background-color: $judlup-sec !important;
+    @media (min-width: $xs-screen-min) and (max-width: $xs-screen-max) {
+      left: 2%;
+    }
     .experience-card {
       // width: 20%;
       margin-left: 1%;
@@ -89,7 +92,7 @@
       width: 95%;
       margin-bottom: 0;
       margin-top: 10px;
-      margin-left: 4.2%;
+      margin-left: 2%;
     }
   }
 
@@ -102,7 +105,7 @@
       width: 95%;
       margin-bottom: 10px;
       margin-top: 10px;
-      margin-left: 4.2%;
+      margin-left: 2%;
     }
   }
   .roles {
