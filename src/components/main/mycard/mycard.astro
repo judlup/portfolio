@@ -3,6 +3,7 @@ import { Icon } from "astro-icon";
 const info = {
   name: "Julián Darío Luna Patiño",
   role: "Software Architect",
+  secondRole: "AWS Community Builder",
   education: [
     "Telecommunications Engineer",
     "MSc. Architectures of Information Technology",
@@ -71,6 +72,9 @@ const info = {
     </h5>
     <span class="text-sm text-gray-500 dark:text-gray-400">{info.role}</span>
     <span class="text-xs text-gray-500 dark:text-gray-400"
+      >{info.secondRole}</span
+    >
+    <span class="text-xs text-gray-500 dark:text-gray-400"
       >{info.education[0]}</span
     >
     <span class="text-xs text-gray-500 dark:text-gray-400"
@@ -100,7 +104,7 @@ const info = {
               <a
                 href={socialNetwork.url}
                 target="_blank"
-                class="text-slate-400 rounded-full "
+                class="text-slate-400 rounded-full hover:text-blue-900"
               >
                 <span class="sr-only">{socialNetwork.name}</span>
                 <Icon class="w-6 h-6" name={`${socialNetwork.icon}`} />
