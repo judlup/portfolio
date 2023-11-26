@@ -2,16 +2,18 @@
 import About from "../components/main/about/about.astro";
 import Mycard from "../components/main/mycard/mycard.astro";
 import Myskills from "../components/main/myskills/myskills.astro";
+import Testimonials from "../components/main/testimonials/testimonials.astro";
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
 ---
 
 <Layout title="Julián Darío Luna Patiño">
   <div
-    class="max-w-screen-xl flex flex-wrap flex-col items-center justify-center mx-auto p-4"
+    class="max-w-screen-2xl flex flex-wrap flex-col items-center justify-center mx-auto p-4"
   >
     <Mycard />
     <About />
     <Myskills />
+    <Testimonials />
   </div>
 </Layout>
