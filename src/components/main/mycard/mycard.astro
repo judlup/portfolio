@@ -1,0 +1,114 @@
+---
+import { Icon } from "astro-icon";
+const info = {
+  name: "Julián Darío Luna Patiño",
+  role: "Software Architect",
+  education: [
+    "Telecommunications Engineer",
+    "MSc. Architectures of Information Technology",
+  ],
+  picture:
+    "https://pbs.twimg.com/profile_images/1678652101331746819/F_2AHR1__400x400.jpg",
+  socialNetworks: [
+    {
+      name: "linkedin",
+      url: "https://www.linkedin.com/in/judlup/",
+      icon: "ri:linkedin-fill",
+    },
+    {
+      name: "twitter",
+      url: "https://twitter.com/judlup",
+      icon: "mdi:twitter",
+    },
+    {
+      name: "github",
+      url: "https://github.com/judlup",
+      icon: "mdi:github",
+    },
+    {
+      name: "youtube",
+      url: "https://youtube.com/juliandario1006",
+      icon: "mdi:youtube",
+    },
+    {
+      name: "instagram",
+      url: "https://instagram.com/judlup",
+      icon: "ri:instagram-line",
+    },
+    {
+      name: "tik tok",
+      url: "https://www.tiktok.com/@trycatch.tv/",
+      icon: "ic:baseline-tiktok",
+    },
+    {
+      name: "medium",
+      url: "https://medium.com/@judlup",
+      icon: "mdi:medium",
+    },
+  ],
+  cv: {
+    url: "",
+    icon: "bi:download",
+  },
+  email: {
+    url: "mailto:im@judlup.dev",
+    icon: "mdi-light:email",
+  },
+};
+---
+
+<div
+  class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-2"
+>
+  <div class="flex flex-col items-center pb-10 mt-8">
+    <img
+      class="w-24 h-24 mb-3 rounded-full shadow-lg"
+      src={info.picture}
+      alt="Judlup"
+    />
+    <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+      {info.name}
+    </h5>
+    <span class="text-sm text-gray-500 dark:text-gray-400">{info.role}</span>
+    <span class="text-xs text-gray-500 dark:text-gray-400"
+      >{info.education[0]}</span
+    >
+    <span class="text-xs text-gray-500 dark:text-gray-400"
+      >{info.education[1]}</span
+    >
+    <div class="flex mt-4 md:mt-6">
+      <a
+        href={info.cv.url}
+        class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-900 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        ><Icon class="w-4 h-4" name={`${info.cv.icon}`} /><span class="ml-2"
+          >Resume</span
+        ></a
+      >
+      <a
+        href={info.email.url}
+        class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700 ms-3"
+        ><Icon class="w-5 h-5" name={`${info.email.icon}`} /><span class="ml-2"
+          >Contact me</span
+        ></a
+      >
+    </div>
+    <div>
+      <ul class="flex mt-4 space-x-2">
+        {
+          info.socialNetworks.map((socialNetwork) => (
+            <li>
+              <a
+                href={socialNetwork.url}
+                target="_blank"
+                class="text-slate-400 rounded-full "
+              >
+                <span class="sr-only">{socialNetwork.name}</span>
+                <Icon class="w-6 h-6" name={`${socialNetwork.icon}`} />
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</div>
