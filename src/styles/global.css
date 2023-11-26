@@ -1,0 +1,8 @@
+:root {
+  --color-primary: #e4e0e0;
+}
+
+body {
+  background-color: var(--color-primary);
+  font-family: 'Quicksand', sans-serif;
+}
