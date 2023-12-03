@@ -1,0 +1,100 @@
+---
+import Icon from "astro-icon";
+import { Image } from "astro:assets";
+import Domoteco from "../../assets/img/domoteco.png";
+import Intertect from "../../assets/img/intertect.png";
+import Motorella from "../../assets/img/motorella.jpeg";
+import Nec from "../../assets/img/nec.png";
+import Orbit from "../../assets/img/orbit.png";
+import Rappi from "../../assets/img/rappi.png";
+
+const info = {
+  title: "Experience",
+  seeAll: {
+    text: "See all in",
+    url: "https://www.linkedin.com/in/judlup/details/experience/",
+    icon: "mdi:linkedin",
+  },
+  jobs: [
+    {
+      picture: Rappi,
+      role: "Engineer Lead",
+      company: "Rappi",
+      period: "2022 - Present",
+    },
+    {
+      picture: Intertect,
+      role: "Senior Software Engineer",
+      company: "Intertec International",
+      period: "2021 - 2022",
+    },
+    {
+      picture: Orbit,
+      role: "Senior Fullstack Developer",
+      company: "Orbit Group Partner",
+      period: "2021 - 2021",
+    },
+    {
+      picture: Motorella,
+      role: "Software Architect",
+      company: "Motorella",
+      period: "2019 - 2021",
+    },
+    {
+      picture: Nec,
+      role: "Software Development Lead",
+      company: "Nec de Colombia",
+      period: "2019 - 2021",
+    },
+    {
+      picture: Domoteco,
+      role: "CEO",
+      company: "Domoteco",
+      period: "2010 - present",
+    },
+  ],
+};
+---
+
+<div
+  class="w-full mx-w-xl md:max-w-6xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-2"
+>
+  <div class="flex flex-col items-center pb-10 mt-8 flex-wrap">
+    <span class="text-slate-900 font-bold md:text-2xl">{info.title}</span>
+    <hr />
+    <div class="grid grid-cols-1 md:grid-cols-3 md:gap-4">
+      {
+        info.jobs.map((job) => {
+          return (
+            <div class="flex flex-col items-center mt-4 bg-slate-50 rounded-md max-w-2xl ml-4 mr-4 w-72">
+              <Image
+                src={job.picture}
+                alt={job.company}
+                class="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover mt-4"
+              />
+              <span class="text-gray-800 dark:text-white text-md md:text-xl font-medium title-font mt-2 text-sm px-1 py-1">
+                {job.company}
+              </span>
+              <span class="text-gray-500 dark:text-gray-300 text-xs md:text-sm font-semibold title-font uppercase mt-1 ">
+                {job.role}
+              </span>
+              <span class="text-gray-500 dark:text-gray-300 text-xs md:text-sm title-font uppercase mt-1 mb-2 ">
+                {job.period}
+              </span>
+            </div>
+          );
+        })
+      }
+    </div>
+    <div>
+      <a
+        href={info.seeAll.url}
+        target="_blank"
+        class="text-white bg-blue-900 hover:bg-blue-800 p-2 rounded-md inline-flex items-center mt-3"
+      >
+        {info.seeAll.text}
+        <Icon name={info.seeAll.icon} class="w-6 h-6 ml-2" />
+      </a>
+    </div>
+  </div>
+</div>
