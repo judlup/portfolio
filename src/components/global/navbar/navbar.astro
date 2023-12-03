@@ -2,34 +2,43 @@
 const info = {
   title: "Judlup",
   subtitle: ".dev",
-  picture : "https://pbs.twimg.com/profile_images/1678652101331746819/F_2AHR1__400x400.jpg",
+  picture:
+    "https://pbs.twimg.com/profile_images/1678652101331746819/F_2AHR1__400x400.jpg",
   paths: [
     {
       path: "/",
-      name: "Home"
+      name: "Home",
     },
     {
-      path: "/exxperience",
-      name: "Experience"
+      path: "/skills",
+      name: "Skills",
+    },
+    {
+      path: "/experience",
+      name: "Experience",
+    },
+    {
+      path: "/testimonials",
+      name: "Testimonials",
     },
     {
       path: "/projects",
-      name: "Projects"
+      name: "Projects",
     },
     {
       path: "/recognitions",
-      name: "Recognitions"
+      name: "Recognitions",
     },
     {
       path: "/education",
-      name: "Education"
+      name: "Education",
     },
     {
       path: "/contact",
-      name: "Contact"
-    }
-  ]
-}
+      name: "Contact",
+    },
+  ],
+};
 ---
 
 <nav class="bg-blue-950 border-gray-200 dark:bg-gray-900">
@@ -75,15 +84,19 @@ const info = {
       <ul
         class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-blue-950 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
       >
-      {info.paths.map((path) => (
-        <li>
-          <a
-            href="#"
-            class="block py-2 px-3 text-white rounded md:bg-transparent md:p-0 hover:text-blue-200"
-            aria-current="page">{path.name}</a
-          >
-        </li>
-      ))} 
+        {
+          info.paths.map((path) => (
+            <li>
+              <a
+                href={path.path}
+                class="block py-2 px-3 text-white rounded md:bg-transparent md:p-0 hover:text-blue-200"
+                aria-current="page"
+              >
+                {path.name}
+              </a>
+            </li>
+          ))
+        }
       </ul>
     </div>
   </div>

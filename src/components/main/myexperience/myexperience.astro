@@ -1,7 +1,10 @@
 ---
 import Icon from "astro-icon";
 import { Image } from "astro:assets";
+import Domoteco from "../../../assets/img/domoteco.png";
 import Intertect from "../../../assets/img/intertect.png";
+import Motorella from "../../../assets/img/motorella.jpeg";
+import Nec from "../../../assets/img/nec.png";
 import Orbit from "../../../assets/img/orbit.png";
 import Rappi from "../../../assets/img/rappi.png";
 
@@ -9,7 +12,7 @@ const info = {
   title: "Experience",
   seeAll: {
     text: "See all in",
-    url: "https://linkedin.com/in/judlup",
+    url: "https://www.linkedin.com/in/judlup/details/experience/",
     icon: "mdi:linkedin",
   },
   jobs: [
@@ -31,6 +34,24 @@ const info = {
       company: "Orbit Group Partner",
       period: "2021 - 2021",
     },
+    {
+      picture: Motorella,
+      role: "Software Architect",
+      company: "Motorella",
+      period: "2019 - 2021",
+    },
+    {
+      picture: Nec,
+      role: "Software Development Lead",
+      company: "Nec de Colombia",
+      period: "2019 - 2021",
+    },
+    {
+      picture: Domoteco,
+      role: "CEO",
+      company: "Domoteco",
+      period: "2010 - present",
+    },
   ],
 };
 ---
@@ -41,7 +62,7 @@ const info = {
   <div class="flex flex-col items-center pb-10 mt-8 flex-wrap">
     <span class="text-slate-900 font-bold md:text-2xl">{info.title}</span>
     <hr />
-    <div class="md:flex">
+    <div class="grid grid-cols-1 md:grid-cols-3 md:gap-4">
       {
         info.jobs.map((job) => {
           return (
