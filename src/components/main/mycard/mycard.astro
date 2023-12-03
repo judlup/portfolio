@@ -1,5 +1,8 @@
 ---
 import { Icon } from "astro-icon";
+import { Image } from "astro:assets";
+import Judlup from "../../../assets/img/judlup.jpg";
+
 const info = {
   name: "Julián Darío Luna Patiño",
   role: "Software Architect",
@@ -8,8 +11,7 @@ const info = {
     "Telecommunications Engineer",
     "MSc. Architectures of Information Technology",
   ],
-  picture:
-    "https://pbs.twimg.com/profile_images/1678652101331746819/F_2AHR1__400x400.jpg",
+  picture: Judlup,
   socialNetworks: [
     {
       name: "linkedin",
@@ -17,24 +19,9 @@ const info = {
       icon: "ri:linkedin-fill",
     },
     {
-      name: "twitter",
-      url: "https://twitter.com/judlup",
-      icon: "mdi:twitter",
-    },
-    {
       name: "github",
       url: "https://github.com/judlup",
       icon: "mdi:github",
-    },
-    {
-      name: "youtube",
-      url: "https://youtube.com/juliandario1006",
-      icon: "mdi:youtube",
-    },
-    {
-      name: "instagram",
-      url: "https://instagram.com/judlup",
-      icon: "ri:instagram-line",
     },
     {
       name: "tik tok",
@@ -45,6 +32,21 @@ const info = {
       name: "medium",
       url: "https://medium.com/@judlup",
       icon: "mdi:medium",
+    },
+    {
+      name: "instagram",
+      url: "https://instagram.com/judlup",
+      icon: "ri:instagram-line",
+    },
+    {
+      name: "youtube",
+      url: "https://youtube.com/juliandario1006",
+      icon: "mdi:youtube",
+    },
+    {
+      name: "twitter",
+      url: "https://twitter.com/judlup",
+      icon: "mdi:twitter",
     },
   ],
   cv: {
@@ -62,7 +64,7 @@ const info = {
   class="w-full mx-w-xl md:max-w-6xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-2"
 >
   <div class="flex flex-col items-center pb-10 mt-8">
-    <img
+    <Image
       class="w-24 h-24 md:w-48 md:h-48 mb-3 rounded-full shadow-lg"
       src={info.picture}
       alt="Judlup"
