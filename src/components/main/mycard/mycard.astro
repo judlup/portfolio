@@ -59,25 +59,29 @@ const info = {
 ---
 
 <div
-  class="w-full max-w-xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-2"
+  class="w-full mx-w-xl md:max-w-6xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-2"
 >
   <div class="flex flex-col items-center pb-10 mt-8">
     <img
-      class="w-24 h-24 mb-3 rounded-full shadow-lg"
+      class="w-24 h-24 md:w-48 md:h-48 mb-3 rounded-full shadow-lg"
       src={info.picture}
       alt="Judlup"
     />
-    <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+    <h5
+      class="mb-1 text-xl md:text-3xl font-medium text-gray-900 dark:text-white"
+    >
       {info.name}
     </h5>
-    <span class="text-sm text-gray-500 dark:text-gray-400">{info.role}</span>
-    <span class="text-xs text-gray-500 dark:text-gray-400"
+    <span class="text-sm md:text-xl text-gray-500 dark:text-gray-400"
+      >{info.role}</span
+    >
+    <span class="text-xs md:text-xl text-gray-500 dark:text-gray-400"
       >{info.secondRole}</span
     >
-    <span class="text-xs text-gray-500 dark:text-gray-400"
+    <span class="text-xs md:text-xl text-gray-500 dark:text-gray-400"
       >{info.education[0]}</span
     >
-    <span class="text-xs text-gray-500 dark:text-gray-400"
+    <span class="text-xs md:text-xl text-gray-500 dark:text-gray-400"
       >{info.education[1]}</span
     >
     <div class="flex mt-4 md:mt-6">
