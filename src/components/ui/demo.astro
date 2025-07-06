@@ -1,0 +1,28 @@
+---
+import Button from "./button.astro"
+---
+
+<div class="p-8 space-y-4">
+  <h2 class="text-2xl font-bold text-foreground">shadcn/ui Demo</h2>
+
+  <div class="space-y-4">
+    <div class="flex gap-2">
+      <Button>Default Button</Button>
+      <Button variant="secondary">Secondary</Button>
+      <Button variant="outline">Outline</Button>
+    </div>
+
+    <div class="flex gap-2">
+      <Button variant="destructive">Destructive</Button>
+      <Button variant="ghost">Ghost</Button>
+      <Button variant="link">Link</Button>
+    </div>
+
+    <div class="flex gap-2">
+      <Button size="sm">Small</Button>
+      <Button size="default">Default</Button>
+      <Button size="lg">Large</Button>
+    </div>
+  </div>
+</div>
+
