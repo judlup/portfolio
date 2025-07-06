@@ -1,0 +1,57 @@
+---
+import Layout from "../layouts/Layout.astro"
+const talks = [
+  {
+    title: "Serverless Architectures on AWS",
+    event: "AWS Community Day Colombia",
+    year: "2023",
+    link: "https://www.youtube.com/watch?v=example1",
+  },
+  {
+    title: "Microservicios y DevOps en la nube",
+    event: "Campus Party",
+    year: "2022",
+    link: "https://www.youtube.com/watch?v=example2",
+  },
+  {
+    title: "Automatización y CI/CD para Startups",
+    event: "Startup Grind",
+    year: "2021",
+    link: "https://www.youtube.com/watch?v=example3",
+  },
+]
+---
+
+<Layout title="Talks">
+  <div
+    class="flex flex-col items-center justify-center mx-auto p-4 min-h-screen bg-[#E4E0E0] dark:bg-gray-900"
+  >
+    <div
+      class="w-full mx-w-xl md:max-w-6xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-auto p-8"
+    >
+      <h1 class="text-3xl font-bold text-blue-900 mb-8 text-center">Talks</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {
+          talks.map((talk) => (
+            <div class="bg-white border border-gray-200 rounded-lg shadow-md p-6 flex flex-col justify-between">
+              <div>
+                <h2 class="text-lg font-semibold text-blue-900 mb-2">
+                  {talk.title}
+                </h2>
+                <p class="text-gray-700 mb-1">{talk.event}</p>
+                <p class="text-gray-500 text-sm mb-2">{talk.year}</p>
+              </div>
+              <a
+                href={talk.link}
+                target="_blank"
+                class="mt-4 inline-block text-blue-900 font-semibold hover:underline"
+              >
+                View Talk
+              </a>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</Layout>

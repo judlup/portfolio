@@ -1,0 +1,279 @@
+{
+  "certificaciones": [
+    {
+      "categoria": "AWS & Cloud",
+      "items": [
+        {
+          "nombre": "AWS New Voices - Foundational Speaker Training",
+          "institucion": "AWS",
+          "fecha": "jun. 2025"
+        },
+        {
+          "nombre": "Microsoft Certified: Azure Fundamentals",
+          "institucion": "Microsoft",
+          "fecha": "oct. 2024"
+        },
+        {
+          "nombre": "AZ-900: Microsoft Azure Fundamentals Exam Prep",
+          "institucion": "Udemy",
+          "fecha": "oct. 2024"
+        },
+        {
+          "nombre": "Microsoft Azure Fundamentals",
+          "institucion": "QA North America",
+          "fecha": "ene. 2024"
+        },
+        {
+          "nombre": "Getting Started with .NET on AWS",
+          "institucion": "AWS",
+          "fecha": "ago. 2021"
+        },
+        {
+          "nombre": "Asistencia AWS Community Day Colombia",
+          "institucion": "AWS Women Colombia",
+          "fecha": "ago. 2024"
+        }
+      ]
+    },
+    {
+      "categoria": "Arquitectura de software y soluciones",
+      "items": [
+        {
+          "nombre": "Practical Solution Architecture",
+          "institucion": "Udemy",
+          "fecha": "ago. 2024"
+        },
+        {
+          "nombre": "Enterprise Architecture: How to Design Models & Diagrams",
+          "institucion": "Udemy",
+          "fecha": "sept. 2024"
+        },
+        {
+          "nombre": "Curso Profesional de Arquitectura de Software",
+          "institucion": "Platzi",
+          "fecha": "may. 2023"
+        },
+        {
+          "nombre": "Fundamentos de Arquitectura de Software",
+          "institucion": "Platzi",
+          "fecha": "ene. 2023"
+        },
+        {
+          "nombre": "Conviértete en especialista en arquitectura de software",
+          "institucion": "LinkedIn",
+          "fecha": "feb. 2022"
+        },
+        {
+          "nombre": "Arquitectura de software: Creación de sistemas sustentables esencial",
+          "institucion": "LinkedIn",
+          "fecha": "ene. 2022"
+        },
+        {
+          "nombre": "Arquitectura de software: Análisis de proyectos esencial",
+          "institucion": "LinkedIn",
+          "fecha": "dic. 2021"
+        },
+        {
+          "nombre": "Software Architecture: Domain-Driven Design",
+          "institucion": "LinkedIn",
+          "fecha": "dic. 2021"
+        },
+        {
+          "nombre": "Arquitectura de software: De desarrollador a arquitecto",
+          "institucion": "LinkedIn",
+          "fecha": "nov. 2021"
+        },
+        {
+          "nombre": "Arquitectura de software: Patrones esencial",
+          "institucion": "LinkedIn",
+          "fecha": "nov. 2021"
+        }
+      ]
+    },
+    {
+      "categoria": "Desarrollo de software y tecnologías específicas",
+      "items": [
+        {
+          "nombre": "C# Developers: Learn the Art of Writing Clean Code",
+          "institucion": "Udemy",
+          "fecha": "ago. 2024"
+        },
+        {
+          "nombre": "C# Advanced Topics: Prepare for Technical Interviews",
+          "institucion": "Udemy",
+          "fecha": "ago. 2024"
+        },
+        {
+          "nombre": "C# Developers: Double Your Coding Speed with Visual Studio",
+          "institucion": "Udemy",
+          "fecha": "ago. 2024"
+        },
+        {
+          "nombre": "C# Basics for Beginners: Learn C# Fundamentals by Coding",
+          "institucion": "Udemy",
+          "fecha": "jul. 2024"
+        },
+        {
+          "nombre": "C# Intermediate - Classes Interfaces and OOP",
+          "institucion": "Udemy",
+          "fecha": "jul. 2024"
+        },
+        {
+          "nombre": "Curso de Kotlin desde Cero",
+          "institucion": "Platzi",
+          "fecha": "feb. 2023"
+        },
+        {
+          "nombre": "Responsive Web Design",
+          "institucion": "freeCodeCamp",
+          "fecha": "mar. 2021"
+        },
+        {
+          "nombre": "Angular avanzado",
+          "institucion": "LinkedIn",
+          "fecha": "ene. 2021"
+        }
+      ]
+    },
+    {
+      "categoria": "Productividad, liderazgo y gestión de proyectos",
+      "items": [
+        {
+          "nombre": "Foundations of Project Management",
+          "institucion": "Google",
+          "fecha": "abr. 2021"
+        },
+        {
+          "nombre": "Project: Gestión de proyectos ágiles",
+          "institucion": "LinkedIn",
+          "fecha": "ene. 2021"
+        },
+        {
+          "nombre": "Scrum avanzado",
+          "institucion": "LinkedIn",
+          "fecha": "feb. 2022"
+        },
+        {
+          "nombre": "Liderar y dinamizar equipos virtuales",
+          "institucion": "LinkedIn",
+          "fecha": "mar. 2022"
+        },
+        {
+          "nombre": "Liderazgo creativo",
+          "institucion": "LinkedIn",
+          "fecha": "abr. 2022"
+        },
+        {
+          "nombre": "Gestión de deuda técnica",
+          "institucion": "LinkedIn",
+          "fecha": "mar. 2022"
+        },
+        {
+          "nombre": "Fundamentos de iniciativa empresarial",
+          "institucion": "LinkedIn",
+          "fecha": "abr. 2022"
+        },
+        {
+          "nombre": "Desarrollo ágil de software",
+          "institucion": "LinkedIn",
+          "fecha": "may. 2022"
+        },
+        {
+          "nombre": "Introducción al diseño de ecosistemas",
+          "institucion": "LinkedIn",
+          "fecha": "feb. 2022"
+        }
+      ]
+    },
+    {
+      "categoria": "Emprendimiento, comunidad y startups",
+      "items": [
+        {
+          "nombre": "Curso Práctico de Creación de Comunidad",
+          "institucion": "Platzi",
+          "fecha": "ago. 2022"
+        },
+        {
+          "nombre": "Audiocurso de Introducción al Mundo de las Startups",
+          "institucion": "Platzi",
+          "fecha": "jun. 2022"
+        },
+        {
+          "nombre": "Curso para Encontrar y Evaluar Ideas para Emprender",
+          "institucion": "Platzi",
+          "fecha": "ago. 2022"
+        },
+        {
+          "nombre": "Curso de Internacionalización para Startups",
+          "institucion": "Platzi",
+          "fecha": "dic. 2022"
+        },
+        {
+          "nombre": "Audiocurso Cómo Hablar Con Tus Usuarios y Técnicas de Validación",
+          "institucion": "Platzi",
+          "fecha": "ago. 2022"
+        }
+      ]
+    },
+    {
+      "categoria": "Bases de datos y backend",
+      "items": [
+        {
+          "nombre": "Curso de Fundamentos de Bases de Datos",
+          "institucion": "Platzi",
+          "fecha": "jun. 2023"
+        }
+      ]
+    },
+    {
+      "categoria": "Inglés y certificaciones internacionales",
+      "items": [
+        {
+          "nombre": "Building Your English Brain",
+          "institucion": "Udemy",
+          "fecha": "abr. 2025"
+        },
+        {
+          "nombre": "EFSET English Certificate 64/100 (C1 Advanced)",
+          "institucion": "EF",
+          "fecha": "oct. 2021"
+        },
+        {
+          "nombre": "IELTS General Training - B2",
+          "institucion": "British Council",
+          "fecha": "nov. 2021"
+        },
+        {
+          "nombre": "Basic English 1: Elementary",
+          "institucion": "King's College London",
+          "fecha": "abr. 2021"
+        },
+        {
+          "nombre": "Basic English 2: Pre-Intermediate",
+          "institucion": "King's College London",
+          "fecha": "may. 2021"
+        },
+        {
+          "nombre": "Curso de Inglés Intermedio B1: Expresiones de Tiempo y Cantidad",
+          "institucion": "Platzi",
+          "fecha": "jun. 2022"
+        },
+        {
+          "nombre": "Curso de Inglés Intermedio B1: Verbos Infinitivos y Transitivos",
+          "institucion": "Platzi",
+          "fecha": "ene. 2023"
+        },
+        {
+          "nombre": "Curso de Inglés Intermedio B1: Conectores y Preferencias",
+          "institucion": "Platzi",
+          "fecha": "ago. 2022"
+        },
+        {
+          "nombre": "Curso de Preparación para IELTS",
+          "institucion": "Platzi",
+          "fecha": "sept. 2022"
+        }
+      ]
+    }
+  ]
+}
