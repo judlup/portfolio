@@ -1,279 +1,676 @@
 {
-  "certificaciones": [
+  "Educación Formal": [
     {
-      "categoria": "AWS & Cloud",
-      "items": [
-        {
-          "nombre": "AWS New Voices - Foundational Speaker Training",
-          "institucion": "AWS",
-          "fecha": "jun. 2025"
-        },
-        {
-          "nombre": "Microsoft Certified: Azure Fundamentals",
-          "institucion": "Microsoft",
-          "fecha": "oct. 2024"
-        },
-        {
-          "nombre": "AZ-900: Microsoft Azure Fundamentals Exam Prep",
-          "institucion": "Udemy",
-          "fecha": "oct. 2024"
-        },
-        {
-          "nombre": "Microsoft Azure Fundamentals",
-          "institucion": "QA North America",
-          "fecha": "ene. 2024"
-        },
-        {
-          "nombre": "Getting Started with .NET on AWS",
-          "institucion": "AWS",
-          "fecha": "ago. 2021"
-        },
-        {
-          "nombre": "Asistencia AWS Community Day Colombia",
-          "institucion": "AWS Women Colombia",
-          "fecha": "ago. 2024"
-        }
-      ]
+      "Tipo": "Profesional",
+      "Título": "Magíster en Arquitecturas de tecnologías de información",
+      "Entidad": "Uniandes",
+      "Año": 2024
     },
     {
-      "categoria": "Arquitectura de software y soluciones",
-      "items": [
-        {
-          "nombre": "Practical Solution Architecture",
-          "institucion": "Udemy",
-          "fecha": "ago. 2024"
-        },
-        {
-          "nombre": "Enterprise Architecture: How to Design Models & Diagrams",
-          "institucion": "Udemy",
-          "fecha": "sept. 2024"
-        },
-        {
-          "nombre": "Curso Profesional de Arquitectura de Software",
-          "institucion": "Platzi",
-          "fecha": "may. 2023"
-        },
-        {
-          "nombre": "Fundamentos de Arquitectura de Software",
-          "institucion": "Platzi",
-          "fecha": "ene. 2023"
-        },
-        {
-          "nombre": "Conviértete en especialista en arquitectura de software",
-          "institucion": "LinkedIn",
-          "fecha": "feb. 2022"
-        },
-        {
-          "nombre": "Arquitectura de software: Creación de sistemas sustentables esencial",
-          "institucion": "LinkedIn",
-          "fecha": "ene. 2022"
-        },
-        {
-          "nombre": "Arquitectura de software: Análisis de proyectos esencial",
-          "institucion": "LinkedIn",
-          "fecha": "dic. 2021"
-        },
-        {
-          "nombre": "Software Architecture: Domain-Driven Design",
-          "institucion": "LinkedIn",
-          "fecha": "dic. 2021"
-        },
-        {
-          "nombre": "Arquitectura de software: De desarrollador a arquitecto",
-          "institucion": "LinkedIn",
-          "fecha": "nov. 2021"
-        },
-        {
-          "nombre": "Arquitectura de software: Patrones esencial",
-          "institucion": "LinkedIn",
-          "fecha": "nov. 2021"
-        }
-      ]
+      "Tipo": "Profesional",
+      "Título": "Ingeniero de telecomunicaciones",
+      "Entidad": "UNAD",
+      "Año": 2021
     },
     {
-      "categoria": "Desarrollo de software y tecnologías específicas",
-      "items": [
-        {
-          "nombre": "C# Developers: Learn the Art of Writing Clean Code",
-          "institucion": "Udemy",
-          "fecha": "ago. 2024"
-        },
-        {
-          "nombre": "C# Advanced Topics: Prepare for Technical Interviews",
-          "institucion": "Udemy",
-          "fecha": "ago. 2024"
-        },
-        {
-          "nombre": "C# Developers: Double Your Coding Speed with Visual Studio",
-          "institucion": "Udemy",
-          "fecha": "ago. 2024"
-        },
-        {
-          "nombre": "C# Basics for Beginners: Learn C# Fundamentals by Coding",
-          "institucion": "Udemy",
-          "fecha": "jul. 2024"
-        },
-        {
-          "nombre": "C# Intermediate - Classes Interfaces and OOP",
-          "institucion": "Udemy",
-          "fecha": "jul. 2024"
-        },
-        {
-          "nombre": "Curso de Kotlin desde Cero",
-          "institucion": "Platzi",
-          "fecha": "feb. 2023"
-        },
-        {
-          "nombre": "Responsive Web Design",
-          "institucion": "freeCodeCamp",
-          "fecha": "mar. 2021"
-        },
-        {
-          "nombre": "Angular avanzado",
-          "institucion": "LinkedIn",
-          "fecha": "ene. 2021"
-        }
-      ]
+      "Tipo": "Profesional",
+      "Título": "Tecnólogo en Telecomunicaciones",
+      "Entidad": "SENA",
+      "Año": 2012
     },
     {
-      "categoria": "Productividad, liderazgo y gestión de proyectos",
-      "items": [
-        {
-          "nombre": "Foundations of Project Management",
-          "institucion": "Google",
-          "fecha": "abr. 2021"
-        },
-        {
-          "nombre": "Project: Gestión de proyectos ágiles",
-          "institucion": "LinkedIn",
-          "fecha": "ene. 2021"
-        },
-        {
-          "nombre": "Scrum avanzado",
-          "institucion": "LinkedIn",
-          "fecha": "feb. 2022"
-        },
-        {
-          "nombre": "Liderar y dinamizar equipos virtuales",
-          "institucion": "LinkedIn",
-          "fecha": "mar. 2022"
-        },
-        {
-          "nombre": "Liderazgo creativo",
-          "institucion": "LinkedIn",
-          "fecha": "abr. 2022"
-        },
-        {
-          "nombre": "Gestión de deuda técnica",
-          "institucion": "LinkedIn",
-          "fecha": "mar. 2022"
-        },
-        {
-          "nombre": "Fundamentos de iniciativa empresarial",
-          "institucion": "LinkedIn",
-          "fecha": "abr. 2022"
-        },
-        {
-          "nombre": "Desarrollo ágil de software",
-          "institucion": "LinkedIn",
-          "fecha": "may. 2022"
-        },
-        {
-          "nombre": "Introducción al diseño de ecosistemas",
-          "institucion": "LinkedIn",
-          "fecha": "feb. 2022"
-        }
-      ]
+      "Tipo": "Profesional",
+      "Título": "Especialización tecnológica en gestión y seguridad de bases de datos",
+      "Entidad": "SENA",
+      "Año": 2017
     },
     {
-      "categoria": "Emprendimiento, comunidad y startups",
-      "items": [
-        {
-          "nombre": "Curso Práctico de Creación de Comunidad",
-          "institucion": "Platzi",
-          "fecha": "ago. 2022"
-        },
-        {
-          "nombre": "Audiocurso de Introducción al Mundo de las Startups",
-          "institucion": "Platzi",
-          "fecha": "jun. 2022"
-        },
-        {
-          "nombre": "Curso para Encontrar y Evaluar Ideas para Emprender",
-          "institucion": "Platzi",
-          "fecha": "ago. 2022"
-        },
-        {
-          "nombre": "Curso de Internacionalización para Startups",
-          "institucion": "Platzi",
-          "fecha": "dic. 2022"
-        },
-        {
-          "nombre": "Audiocurso Cómo Hablar Con Tus Usuarios y Técnicas de Validación",
-          "institucion": "Platzi",
-          "fecha": "ago. 2022"
-        }
-      ]
+      "Tipo": "Profesional",
+      "Título": "Técnico en mantenimiento de equipos de computo",
+      "Entidad": "SENA",
+      "Año": 2010
     },
     {
-      "categoria": "Bases de datos y backend",
-      "items": [
-        {
-          "nombre": "Curso de Fundamentos de Bases de Datos",
-          "institucion": "Platzi",
-          "fecha": "jun. 2023"
-        }
-      ]
+      "Tipo": "Certificado",
+      "Título": "Bachiller técnico, especilidad en Mantenimiento de hardware",
+      "Entidad": "Instituto Rafael Pombo/Sena",
+      "Año": 2008
+    }
+  ],
+  "Liderazgo, Productividad y Gestión de Proyectos": [
+    {
+      "Tipo": "Certificado",
+      "Título": "Foundations of Project Management",
+      "Entidad": "Google/Coursera",
+      "Año": 2021
     },
     {
-      "categoria": "Inglés y certificaciones internacionales",
-      "items": [
-        {
-          "nombre": "Building Your English Brain",
-          "institucion": "Udemy",
-          "fecha": "abr. 2025"
-        },
-        {
-          "nombre": "EFSET English Certificate 64/100 (C1 Advanced)",
-          "institucion": "EF",
-          "fecha": "oct. 2021"
-        },
-        {
-          "nombre": "IELTS General Training - B2",
-          "institucion": "British Council",
-          "fecha": "nov. 2021"
-        },
-        {
-          "nombre": "Basic English 1: Elementary",
-          "institucion": "King's College London",
-          "fecha": "abr. 2021"
-        },
-        {
-          "nombre": "Basic English 2: Pre-Intermediate",
-          "institucion": "King's College London",
-          "fecha": "may. 2021"
-        },
-        {
-          "nombre": "Curso de Inglés Intermedio B1: Expresiones de Tiempo y Cantidad",
-          "institucion": "Platzi",
-          "fecha": "jun. 2022"
-        },
-        {
-          "nombre": "Curso de Inglés Intermedio B1: Verbos Infinitivos y Transitivos",
-          "institucion": "Platzi",
-          "fecha": "ene. 2023"
-        },
-        {
-          "nombre": "Curso de Inglés Intermedio B1: Conectores y Preferencias",
-          "institucion": "Platzi",
-          "fecha": "ago. 2022"
-        },
-        {
-          "nombre": "Curso de Preparación para IELTS",
-          "institucion": "Platzi",
-          "fecha": "sept. 2022"
-        }
-      ]
+      "Tipo": "Curso Corto",
+      "Título": "Liderar y dinamizar equipos virtuales",
+      "Entidad": "LinkedIn Learning",
+      "Año": 2022
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Liderazgo creativo",
+      "Entidad": "LinkedIn Learning",
+      "Año": 2022
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "REACT práctico: Interfaz para aplicación web de gestión deportiva",
+      "Entidad": "LinkedIn Learning",
+      "Año": 2020
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Scrum avanzado",
+      "Entidad": "LinkedIn Learning",
+      "Año": 2022
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "React native: aplicación móvil de usuario para gestión deportiva",
+      "Entidad": "SENA",
+      "Año": 2020
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Project: Gestión de proyectos ágiles",
+      "Entidad": "LinkedIn Learning",
+      "Año": 2021
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Gestión de deuda técnica",
+      "Entidad": "LinkedIn Learning",
+      "Año": 2022
+    }
+  ],
+  "Desarrollo de Software y Programación": [
+    {
+      "Tipo": "Curso Corto",
+      "Título": "C# Advanced topics: Prepare for technical interviews",
+      "Entidad": "Udemy",
+      "Año": 2024
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "C# Basics for beginners: Learn C# Fundamentals by coding",
+      "Entidad": "Udemy",
+      "Año": 2024
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "C# Developers: Double Your Coding Speed with visual studio",
+      "Entidad": "Udemy",
+      "Año": 2024
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "C# Developers: Learn the art of writing clean code",
+      "Entidad": "Udemy",
+      "Año": 2024
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "C# Intermediate: Classes, Interfaces and OPP",
+      "Entidad": "Udemy",
+      "Año": 2024
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Desarrollo de aplicaciones web con PHP",
+      "Entidad": "SENA",
+      "Año": 2012
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Introducción al desarrollo backend ",
+      "Entidad": "Platzi",
+      "Año": 2023
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Kotlin desde cero",
+      "Entidad": "Platzi",
+      "Año": 2023
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Estructura del lenguaje de programación C++ (Nivel 1)",
+      "Entidad": "SENA",
+      "Año": 2010
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Introducir en conceptos de programación estructurada usando C++",
+      "Entidad": "SENA",
+      "Año": 2011
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Módulos, estructura de almacenamiento y POO utilizando el lenguaje de programación C++ (Nivel 2)",
+      "Entidad": "SENA",
+      "Año": 2011
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Programación de dispositivos móviles",
+      "Entidad": "SENA",
+      "Año": 2011
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Programación de páginas web con HTML y Javascript ",
+      "Entidad": "SENA",
+      "Año": 2010
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Programación básica de microcontroladores PIC",
+      "Entidad": "SENA",
+      "Año": 2011
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Programación básica de sistemas micro controlado Arduino",
+      "Entidad": "SENA",
+      "Año": 2011
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Angular avanzado",
+      "Entidad": "LinkedIn Learning",
+      "Año": 2021
+    }
+  ],
+  "Arquitectura, Cloud e Infraestructura": [
+    {
+      "Tipo": "Curso Corto",
+      "Título": "AZ-900: Microsoft Azure Fundamentals Exam Prep - Sep 2024",
+      "Entidad": "Udemy",
+      "Año": 2024
+    },
+    {
+      "Tipo": "Certificado",
+      "Título": "Microsoft Certified: Azure Fundamentals",
+      "Entidad": "Microsoft",
+      "Año": 2024
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "IoT Foundations: Fundamentals",
+      "Entidad": "LinkedIn Learning",
+      "Año": 2020
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Microsoft Azure Fundamentals",
+      "Entidad": "QA",
+      "Año": 2024
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Getting stated with .Net on AWS",
+      "Entidad": "AWS",
+      "Año": 2021
+    },
+    {
+      "Tipo": "Ponencia",
+      "Título": "Monitoreo climatológico en cultivos de aguacate basado en tecnología IoT",
+      "Entidad": "UNAD",
+      "Año": 2020
+    },
+    {
+      "Tipo": "Evento",
+      "Título": "AWS Community Day Colombia 2024",
+      "Entidad": "AWS Woman Colombia",
+      "Año": 2024
+    },
+    {
+      "Tipo": "Certificado",
+      "Título": "AWS New Voices - Foundational Speaker Training",
+      "Entidad": "AWS",
+      "Año": 2025
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Practical solution architecture",
+      "Entidad": "Udemy",
+      "Año": 2024
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Fundamentos de arquitectura de software",
+      "Entidad": "Platzi",
+      "Año": 2023
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Arquitectura de software",
+      "Entidad": "Platzi",
+      "Año": 2023
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Arquitectura de software: Análisis de proyectos esencial",
+      "Entidad": "LinkedIn Learning",
+      "Año": 2021
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Arquitectura de software: Creación de sistemas sustentables esencial",
+      "Entidad": "LinkedIn Learning",
+      "Año": 2022
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Arquitectura de software: De desarrollador a arquitecto o arquitecta",
+      "Entidad": "LinkedIn Learning",
+      "Año": 2021
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Arquitectura de software: Diseño de sistemas de software esencial",
+      "Entidad": "LinkedIn Learning",
+      "Año": 2021
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Arquitectura de software: Patrones esencial",
+      "Entidad": "LinkedIn Learning",
+      "Año": 2021
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Conviértete en especialista en arquitectura de software",
+      "Entidad": "LinkedIn Learning",
+      "Año": 2022
+    }
+  ],
+  "Redes y Seguridad": [
+    {
+      "Tipo": "Curso Corto",
+      "Título": "2021 Social Engineering Red Flags",
+      "Entidad": "KnowBe4",
+      "Año": 2021
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "CCNA Exploration: Network Fundamentals",
+      "Entidad": "Cisco",
+      "Año": 2010
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "CCNA Exploration: Routing Protocols and Concepts",
+      "Entidad": "Cisco",
+      "Año": 2011
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "CCNA Exploration: LAN Switching and Wireless",
+      "Entidad": "Cisco",
+      "Año": 2012
+    },
+    {
+      "Tipo": "Certificado",
+      "Título": "Ethics and Conduct & Information Security Trainings",
+      "Entidad": "C&T",
+      "Año": 2023
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Controles y seguridad",
+      "Entidad": "SENA",
+      "Año": 2010
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Empalmería de redes en cobre multipar",
+      "Entidad": "SENA",
+      "Año": 2011
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Mobile Device Security",
+      "Entidad": "KnowBe4",
+      "Año": 2021
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Redes y seguridad",
+      "Entidad": "SENA",
+      "Año": 2011
+    }
+  ],
+  "Bases de Datos": [
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Fundamentos de bases de datos",
+      "Entidad": "Platzi",
+      "Año": 2023
+    }
+  ],
+  "Idiomas": [
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Basic English 1: Elementary",
+      "Entidad": "Kings's Collage London",
+      "Año": 2021
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Basic English 2: Pre-intermediate",
+      "Entidad": "Kings's Collage London",
+      "Año": 2021
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Building your english brain",
+      "Entidad": "Udemy",
+      "Año": 2025
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "English discoveries - básico 1",
+      "Entidad": "SENA",
+      "Año": 2010
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Intermediate english course B1: infinitive and transitive verbs",
+      "Entidad": "Platzi",
+      "Año": 2023
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Intermediate english course B1: Expressions of time and quantity",
+      "Entidad": "Platzi",
+      "Año": 2022
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "IELTS preparation course",
+      "Entidad": "Platzi",
+      "Año": 2022
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "English discoveries - básico 2",
+      "Entidad": "SENA",
+      "Año": 2010
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "English discoveries - intermedio 2",
+      "Entidad": "SENA",
+      "Año": 2010
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "English discoveries - intermedio 1",
+      "Entidad": "SENA",
+      "Año": 2010
+    },
+    {
+      "Tipo": "Certificado",
+      "Título": "IELTS",
+      "Entidad": "IELTS",
+      "Año": 2021
+    },
+    {
+      "Tipo": "Certificado",
+      "Título": "Inglés básico conversacional",
+      "Entidad": "Caisa",
+      "Año": 2010
+    },
+    {
+      "Tipo": "Certificado",
+      "Título": "EFSet English Certificate C1 Advanced",
+      "Entidad": "EF Set",
+      "Año": 2021
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Curso de Inglés Intermedio B1: Conectores y Preferencias",
+      "Entidad": "PLatzi",
+      "Año": 2022
+    }
+  ],
+  "Emprendimiento y Negocios": [
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Introducción al mundo de las startups",
+      "Entidad": "Platzi",
+      "Año": 2022
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Encontrar y evaluar ideas para emprender",
+      "Entidad": "Platzi",
+      "Año": 2022
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Internacionalización para startups",
+      "Entidad": "Platzi",
+      "Año": 2023
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Creación de comunidad",
+      "Entidad": "Platzi",
+      "Año": 2022
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Fundamentos de iniciativa empresarial",
+      "Entidad": "LinkedIn Learning",
+      "Año": 2022
+    }
+  ],
+  "Eventos, Ponencias y Reconocimientos": [
+    {
+      "Tipo": "Ponencia",
+      "Título": "Ponente Cusol TechCode 2023 & Software freedom day",
+      "Entidad": "Cusol UIS",
+      "Año": 2023
+    },
+    {
+      "Tipo": "Ponencia",
+      "Título": "Conferencista Flisol 2024 Bucaramanga",
+      "Entidad": "Flisol Cusol  UIS",
+      "Año": 2024
+    },
+    {
+      "Tipo": "Evento",
+      "Título": "AWS Community Day Colombia 2024",
+      "Entidad": "AWS Woman Colombia",
+      "Año": 2024
+    },
+    {
+      "Tipo": "Evento",
+      "Título": "Campus Party 2012",
+      "Entidad": "Campus Party",
+      "Año": 2012
+    }
+  ],
+  "Otros / Habilidades Complementarias": [
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Arrquitectura de computadores",
+      "Entidad": "SENA",
+      "Año": 2009
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Controladores lógicos programables PLC 1",
+      "Entidad": "SENA",
+      "Año": 2011
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Corel Draw - Utilización de herramientas de diseño vectorial",
+      "Entidad": "SENA",
+      "Año": 2010
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Flash - Animación en 2D",
+      "Entidad": "SENA",
+      "Año": 2009
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Trabajo seguro en alturas nivel avanzado",
+      "Entidad": "SENA",
+      "Año": 2012
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Asesoría para la aprehensión de procesos tecnológicos",
+      "Entidad": "SENA",
+      "Año": 2012
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Básico operativo trabajo seguro en alturas",
+      "Entidad": "SENA",
+      "Año": 2011
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Desarrollo ágil de software",
+      "Entidad": "LinkedIn Learning",
+      "Año": 2022
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Introducción al diseño de ecosistemas",
+      "Entidad": "LinkedIn Learning",
+      "Año": 2022
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Software Architecture: Domain-Driven Design",
+      "Entidad": "LinkedIn Learning",
+      "Año": 2021
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "TensorFlow esencial",
+      "Entidad": "LinkedIn Learning",
+      "Año": 2020
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Microsoft certfied professional",
+      "Entidad": "Microsoft",
+      "Año": 2009
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "IT Essentials: PC Hardware and Software",
+      "Entidad": "CIsco",
+      "Año": 2009
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Corel Draw - Texto y organización de objetos",
+      "Entidad": "SENA",
+      "Año": 2010
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Corel Draw - Transformación de objetos y efectos especiales",
+      "Entidad": "SENA",
+      "Año": 2010
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Cómo hablar con tus usuarios y técnicas de validación",
+      "Entidad": "Platzi",
+      "Año": 2022
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Enterprise architecture: how to design models & diagrams",
+      "Entidad": "Udemy",
+      "Año": 2024
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Fundamentación de ensable y mantenimiento de computadores para los procesos de soporte técnico",
+      "Entidad": "SENA",
+      "Año": 2010
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Inducción a  procesos pedagógicos",
+      "Entidad": "SENA",
+      "Año": 2012
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Informática: Mantenimiento de computadores",
+      "Entidad": "SENA",
+      "Año": 2010
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "MS Office 2007, internet, hightech",
+      "Entidad": "Educación y tecnologías de información S.A",
+      "Año": 2008
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Lnux: sistema operativo, comandos y utildad",
+      "Entidad": "SENA",
+      "Año": 2011
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Manejo de Adobe photoshop CS3",
+      "Entidad": "SENA",
+      "Año": 2010
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "MongoDB 101: Getting Started",
+      "Entidad": "Studio 3T",
+      "Año": 2020
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Phishing Fundamentals",
+      "Entidad": "KnowBe4",
+      "Año": 2021
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Responsive web design",
+      "Entidad": "FreeCode Camp",
+      "Año": 2021
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Taller de fibra óptica",
+      "Entidad": "SENA",
+      "Año": 2011
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Taller de semillero en prototipado con enfoque UX/UI \"Tu primer mock-up\"",
+      "Entidad": "Apps.co",
+      "Año": 2022
+    },
+    {
+      "Tipo": "Curso Corto",
+      "Título": "Vigitalncia tecnológica",
+      "Entidad": "SENA",
+      "Año": 2010
     }
   ]
 }

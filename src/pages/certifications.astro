@@ -1,7 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro"
-import certificationsData from "./certifications.json"
-const categorias = certificationsData.certificaciones
+import certifications from "./certifications.json"
+
+// Transformar el objeto plano en un array de categorías
+const categorias = Object.keys(certifications)
+const totalCertificados = categorias.reduce(
+  (acc, cat) => acc + (certifications as any)[cat].length,
+  0
+)
 ---
 
 <Layout title="Certifications">
@@ -12,30 +18,36 @@ const categorias = certificationsData.certificaciones
       class="w-full mx-w-xl md:max-w-6xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-auto p-8"
     >
       <h1 class="text-3xl font-bold text-blue-900 mb-8 text-center">
-        Certificaciones y Cursos
+        Certificaciones y Educación
       </h1>
-      {
-        categorias.map((cat) => (
-          <div class="mb-10">
-            <h2 class="text-2xl font-semibold text-blue-900 mb-4">
-              {cat.categoria}
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {cat.items.map((item) => (
-                <div class="bg-white border border-gray-200 rounded-lg shadow-md p-6 flex flex-col justify-between">
-                  <div>
-                    <h3 class="text-lg font-semibold text-blue-900 mb-2">
-                      {item.nombre}
-                    </h3>
-                    <p class="text-gray-700 mb-1">{item.institucion}</p>
-                    <p class="text-gray-500 text-sm mb-2">{item.fecha}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        ))
-      }
+      <p
+        class="mb-8 text-lg text-neutral-700 dark:text-neutral-300 text-center"
+      >
+        He obtenido un total de {totalCertificados} certificados, cursos, títulos
+        y reconocimientos a lo largo de mi trayectoria profesional y académica.
+      </p>
+      <main>
+        {
+          categorias.map((categoria) => (
+            <section class="mb-8" id={categoria.replace(/\s+/g, "-")}>
+              <h2 class="text-2xl font-semibold mb-4">{categoria}</h2>
+              <ul class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                {(certifications as any)[categoria].map((cert: any) => (
+                  <li class="bg-white/80 dark:bg-neutral-900 rounded-lg shadow p-4 border border-neutral-200 dark:border-neutral-700">
+                    <div class="font-bold text-lg">{cert.Título}</div>
+                    <div class="text-sm text-neutral-600 dark:text-neutral-300">
+                      {cert.Entidad}
+                    </div>
+                    <div class="text-xs text-neutral-500 dark:text-neutral-400">
+                      {cert.Tipo} &bull; {cert.Año}
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))
+        }
+      </main>
     </div>
   </div>
 </Layout>
