@@ -1,0 +1,116 @@
+---
+// Certifications Preview Component for Main Page
+const featuredCertifications = [
+  {
+    name: "AWS Solutions Architect",
+    provider: "Amazon Web Services",
+    level: "Professional",
+    icon: "aws",
+    color: "bg-orange-100 text-orange-600",
+  },
+  {
+    name: "Google Cloud Architect",
+    provider: "Google Cloud",
+    level: "Professional",
+    icon: "gcp",
+    color: "bg-blue-100 text-blue-600",
+  },
+  {
+    name: "Azure Solutions Architect",
+    provider: "Microsoft",
+    level: "Expert",
+    icon: "azure",
+    color: "bg-blue-100 text-blue-600",
+  },
+  {
+    name: "Kubernetes Administrator",
+    provider: "CNCF",
+    level: "Professional",
+    icon: "kubernetes",
+    color: "bg-blue-100 text-blue-600",
+  },
+  {
+    name: "Terraform Associate",
+    provider: "HashiCorp",
+    level: "Associate",
+    icon: "terraform",
+    color: "bg-purple-100 text-purple-600",
+  },
+  {
+    name: "Docker Certified",
+    provider: "Docker",
+    level: "Associate",
+    icon: "docker",
+    color: "bg-blue-100 text-blue-600",
+  },
+]
+---
+
+<div
+  class="w-full mx-w-xl md:max-w-6xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+>
+  <div class="flex flex-col items-center pb-10 mt-8">
+    <span class="text-slate-900 font-bold md:text-2xl mb-8">Certifications</span
+    >
+    <hr />
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6 w-full px-4"
+    >
+      {
+        featuredCertifications.map((cert) => (
+          <div class="bg-slate-50 hover:bg-blue-50 rounded-lg p-4 border border-gray-200 dark:bg-gray-700 dark:border-gray-600 dark:hover:bg-gray-600 transition-colors duration-200">
+            <div class="flex items-center mb-3">
+              <div
+                class={`w-8 h-8 rounded-full flex items-center justify-center ${cert.color} mr-3`}
+              >
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-sm font-semibold text-blue-900 dark:text-blue-300">
+                  {cert.name}
+                </h3>
+                <p class="text-xs text-gray-600 dark:text-gray-400">
+                  {cert.provider}
+                </p>
+              </div>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full dark:bg-blue-900 dark:text-blue-200">
+                {cert.level}
+              </span>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <div class="text-center mt-8">
+      <a
+        href="/certifications"
+        class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-900 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      >
+        <svg
+          class="w-4 h-4 mr-2"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+          ></path>
+        </svg>
+        View All Certifications
+      </a>
+    </div>
+  </div>
+</div>
+
