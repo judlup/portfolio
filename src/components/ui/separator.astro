@@ -1,0 +1,20 @@
+---
+export interface Props {
+  orientation?: "horizontal" | "vertical"
+  class?: string
+}
+
+const {
+  orientation = "horizontal",
+  class: className = "",
+  ...rest
+} = Astro.props
+
+const classes =
+  orientation === "horizontal"
+    ? `shrink-0 bg-border h-[1px] w-full ${className}`
+    : `shrink-0 bg-border h-full w-[1px] ${className}`
+---
+
+<div class={classes} {...rest}></div>
+

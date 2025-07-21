@@ -1,9 +1,221 @@
 ---
-import MyTestimonials from "../components/mytestimonials/mytestimonials.astro";
-import Layout from "../layouts/Layout.astro";
-import "../styles/global.css";
+import { Image } from "astro:assets"
+import AndresPardo from "../assets/img/andrespardo.jpeg"
+import EdgarAcosta from "../assets/img/edgaracosta.jpeg"
+import JonMaddogHall from "../assets/img/jonmaddoghall.jpeg"
+import JuanDiegoHenao from "../assets/img/juanhenao.jpg"
+import SaulVega from "../assets/img/saulvega.jpeg"
+import XimenaHoffman from "../assets/img/ximenahoffman.jpeg"
+import Layout from "../layouts/Layout.astro"
+import "../styles/global.css"
+
+const testimonials = [
+  {
+    name: 'Jon "Maddong" Hall',
+    picture: JonMaddogHall,
+    role: "Board Chair",
+    company: "Linux Professional Institute",
+    reference:
+      "I have known Julian since he was in high school. He created a home automation project where he could control a whole model house from his android tablet, and it was extremely impressive. I gave him a Raspberry Pi to work into his model, which he did in a few weeks.",
+    highlight: "Extremely impressive",
+  },
+  {
+    name: "Ximena Hoffmann",
+    picture: XimenaHoffman,
+    role: "Change Network Lead",
+    company: "NEC Corporation",
+    reference:
+      "I had the opportunity to work with Julian at NEC, and he always proved to be a natural leader, with an excellent service attitude at all times. He is the kind of professional who helps to build as a team and find various ways to achieve the necessary results.",
+    highlight: "Natural leader",
+  },
+  {
+    name: "Andrés Pardo",
+    picture: AndresPardo,
+    role: "Key Account Manager - Large Accounts",
+    company: "Tatic",
+    reference:
+      "Julian is a quite active engineer, not only proficient in SW development arena, but also displays very good leading abilities adequate to lead agile teams. He's quite self driven, propositive, creative and has a entreprenurship mentality. Is always active, connecting, integrating, supporting, alwasy worried to help teams to be more effective. His personal skills are strengths helping him and his peers to build very productive teams and beat obstacles.",
+    highlight: "Entrepreneurship mentality",
+  },
+  {
+    name: "Juan Diego Henao",
+    picture: JuanDiegoHenao,
+    role: "Desarrollador de Software",
+    company: "Codesa",
+    reference:
+      "Julian Dario was a very important person for my professional development, demonstrating excellent leadership and broad knowledge in his field. With little help from others, he was capable of dealing with all the obstacles that stood in his way, with great organization and quality. He is a team player, always willing to help, and seldom has a bad response for others.",
+    highlight: "Excellent leadership",
+  },
+  {
+    name: "Edgar Acosta",
+    picture: EdgarAcosta,
+    role: "Delivery and Operations Head",
+    company: "NEC de Colombia",
+    reference:
+      "I had the good opportunity to get to know Julian at his period working for NEC. His work was of very positive and opportune impact for the projects my team was developing. I totally recommend Julian as an excellent resource for different kind of projects. Julie is a very creative person with a positive and 'Can Do' attitude all the time.",
+    highlight: "Can Do attitude",
+  },
+  {
+    name: "Saúl Verga Ramírez",
+    picture: SaulVega,
+    role: "Software Engineer",
+    company: "Rappi",
+    reference:
+      "Julian is a leader with a great ability to lead any team he is part of to success, as he knows quite well how to harmonize the task of solving tasks while being empathetic with his team members, always understanding the needs of each of his colleagues whom he leads, and knowing how to unite them to pool efforts and recognizing everyone's work. He also knows how to manage in relation to stakeholders and external teams and to communicate the requirements in such a way that his team can understand.",
+    highlight: "Great ability to lead",
+  },
+]
 ---
 
-<Layout title="Skills">
-  <MyTestimonials />
+<Layout title="Testimonials">
+  <div class="flex flex-col items-center justify-center mx-auto p-4 space-y-6">
+    <div
+      class="w-full mx-w-xl md:max-w-6xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+    >
+      <div class="flex flex-col items-center pb-10 mt-8 px-4">
+        <span class="text-slate-900 font-bold text-lg md:text-2xl mb-6">Recommendations</span>
+        <hr class="w-full max-w-md mb-6" />
+        <p
+          class="mb-8 text-sm md:text-lg text-neutral-700 dark:text-neutral-300 text-center px-4"
+        >
+          Discover what colleagues, mentors, and industry leaders have to say
+          about my work, leadership, and contributions to the tech community.
+        </p>
+
+        <!-- Testimonials Grid -->
+        <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+          {
+            testimonials.map((testimonial, idx) => (
+              <div class="bg-slate-50 hover:bg-blue-50 rounded-lg p-4 border border-gray-200 dark:bg-gray-700 dark:border-gray-600 dark:hover:bg-gray-600 transition-colors duration-200">
+                <div class="flex items-start justify-between">
+                  <div class="flex-1">
+                    <div class="flex items-center mb-3">
+                      <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-3 dark:bg-blue-900">
+                        <svg class="w-4 h-4 text-blue-600 dark:text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                        </svg>
+                      </div>
+                      <div class="flex-1">
+                        <h3 class="text-sm md:text-base font-semibold text-blue-900 dark:text-blue-300 line-clamp-2">
+                          "{testimonial.highlight}"
+                        </h3>
+                      </div>
+                    </div>
+                    
+                    <!-- Author Info with Photo -->
+                    <div class="flex items-center mb-3">
+                      <div class="relative mr-3">
+                        <Image
+                          src={testimonial.picture}
+                          alt={testimonial.name}
+                          class="w-10 h-10 rounded-full object-cover ring-2 ring-blue-200 dark:ring-blue-700"
+                        />
+                        <div class="absolute -bottom-1 -right-1 w-3 h-3 bg-green-500 rounded-full border-2 border-white dark:border-gray-700"></div>
+                      </div>
+                      <div class="flex-1">
+                        <p class="text-xs font-medium text-gray-900 dark:text-gray-100">
+                          {testimonial.name}
+                        </p>
+                        <p class="text-xs text-gray-600 dark:text-gray-400">
+                          {testimonial.role} at {testimonial.company}
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <!-- Testimonial Text -->
+                    <div class="mb-3">
+                      <blockquote class="text-xs text-gray-700 dark:text-gray-300 italic" id={`testimonial-${idx}`}>
+                        {testimonial.reference.length > 150 ? testimonial.reference.substring(0, 150) + '...' : testimonial.reference}
+                      </blockquote>
+                      {testimonial.reference.length > 150 && (
+                        <div class="mt-2">
+                          <button
+                            onclick={`toggleTestimonial(${idx})`}
+                            class="text-xs text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium transition-colors duration-200"
+                            id={`toggle-btn-${idx}`}
+                          >
+                            Show more
+                          </button>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+
+        <!-- CTA Section -->
+        <div class="w-full mt-8">
+          <div
+            class="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-lg border border-blue-200 dark:border-blue-700 p-6"
+          >
+            <h2
+              class="text-lg md:text-xl font-semibold text-blue-900 dark:text-blue-300 mb-4 text-center"
+            >
+              Want to see more recommendations?
+            </h2>
+            <p
+              class="text-sm text-blue-700 dark:text-blue-400 mb-6 text-center"
+            >
+              Explore my complete collection of professional recommendations and
+              endorsements on LinkedIn.
+            </p>
+            <div class="text-center">
+              <a
+                href="https://www.linkedin.com/in/judlup/details/recommendations/?detailScreenTabIndex=0"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center px-4 py-2 bg-blue-900 hover:bg-blue-800 text-white text-sm font-medium rounded-lg transition-colors duration-200"
+              >
+                <svg
+                  class="w-4 h-4 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  ></path>
+                </svg>
+                View All Recommendations
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script is:inline>
+    // Testimonials data
+    const testimonialsData = [
+      "I have known Julian since he was in high school. He created a home automation project where he could control a whole model house from his android tablet, and it was extremely impressive. I gave him a Raspberry Pi to work into his model, which he did in a few weeks.",
+      "I had the opportunity to work with Julian at NEC, and he always proved to be a natural leader, with an excellent service attitude at all times. He is the kind of professional who helps to build as a team and find various ways to achieve the necessary results.",
+      "Julian is a quite active engineer, not only proficient in SW development arena, but also displays very good leading abilities adequate to lead agile teams. He's quite self driven, propositive, creative and has a entreprenurship mentality. Is always active, connecting, integrating, supporting, alwasy worried to help teams to be more effective. His personal skills are strengths helping him and his peers to build very productive teams and beat obstacles.",
+      "Julian Dario was a very important person for my professional development, demonstrating excellent leadership and broad knowledge in his field. With little help from others, he was capable of dealing with all the obstacles that stood in his way, with great organization and quality. He is a team player, always willing to help, and seldom has a bad response for others.",
+      "I had the good opportunity to get to know Julian at his period working for NEC. His work was of very positive and opportune impact for the projects my team was developing. I totally recommend Julian as an excellent resource for different kind of projects. Julie is a very creative person with a positive and 'Can Do' attitude all the time.",
+      "Julian is a leader with a great ability to lead any team he is part of to success, as he knows quite well how to harmonize the task of solving tasks while being empathetic with his team members, always understanding the needs of each of his colleagues whom he leads, and knowing how to unite them to pool efforts and recognizing everyone's work. He also knows how to manage in relation to stakeholders and external teams and to communicate the requirements in such a way that his team can understand."
+    ];
+
+    // Toggle testimonial function
+    window.toggleTestimonial = function(idx) {
+      const testimonialEl = document.getElementById(`testimonial-${idx}`);
+      const btn = document.getElementById(`toggle-btn-${idx}`);
+      
+      if (!testimonialEl || !btn) return;
+      
+      const isExpanded = testimonialEl.textContent === testimonialsData[idx];
+      
+      if (isExpanded) {
+        // Collapse
+        testimonialEl.textContent = testimonialsData[idx].substring(0, 150) + '...';
+        btn.textContent = 'Show more';
+      } else {
+        // Expand
+        testimonialEl.textContent = testimonialsData[idx];
+        btn.textContent = 'Show less';
+      }
+    };
+  </script>
 </Layout>
