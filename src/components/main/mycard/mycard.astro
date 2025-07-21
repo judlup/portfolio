@@ -1,7 +1,5 @@
 ---
 import { Icon } from "astro-icon"
-import { Image } from "astro:assets"
-import Judlup from "../../../assets/img/judlup.jpg"
 
 const info = {
   name: "Julián Darío Luna Patiño",
@@ -12,7 +10,6 @@ const info = {
     "Mg. Architectures of Information Technology",
     "Ph.D. Student in Technology Innovation Management",
   ],
-  picture: Judlup,
   socialNetworks: [
     {
       name: "linkedin",
@@ -65,9 +62,9 @@ const info = {
   class="w-full mx-w-xl md:max-w-6xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
 >
   <div class="flex flex-col items-center pb-10 mt-8 px-4">
-    <Image
-      class="w-24 h-24 md:w-48 md:h-48 mb-3 rounded-full shadow-lg"
-      src={info.picture}
+    <img
+      class="rounded-full shadow-lg aspect-square object-cover max-w-[180px] max-h-[180px] mb-3"
+      src="/judlup.jpg"
       alt="Judlup"
     />
     <h5
